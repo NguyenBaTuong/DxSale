@@ -1,0 +1,70 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+input:focus {
+    box-shadow: none;
+}
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Open Sans',sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@keyframes nextBot {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    to {
+        opacity: 1;
+        height: 103px;
+    }
+}
