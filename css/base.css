@@ -68,3 +68,7 @@ body {
         height: 103px;
     }
 }
+
+.none {
+    display: none;
+}

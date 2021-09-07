@@ -23,33 +23,30 @@
                         <span class="home__nav-i4-name">Version 3.0</span>
                     </div>
                     <ul class="home__nav-list">
-                        <li class="home__nav-item">
-                            <a href="" class="home__nav-item-link">
+                        <li onclick="return ope(this)" id="td1" class="home__nav-item">
+                            <a class="home__nav-item-link">
                                 <i class="home__nav-item-icon fas fa-home"></i> Home
                             </a>
                         </li>
-                        <li class="home__nav-item">
+                        <li onclick="return ope(this)" id="td2" class="home__nav-item">
                             <a href="" class="home__nav-item-link">
                                 <i class="home__nav-item-icon fab fa-btc"></i> DxMint
                             </a>
                         </li>
-                        <li class="home__nav-item">
+                        <li onclick="return ope(this)" id="td3" class="home__nav-item">
                             <a href="" class="home__nav-item-link">
                                 <i class="home__nav-item-icon fas fa-tint"></i> DxDrop 
                             </a>
                         </li>
-                        <!-- <input type="checkbox" name="" id="td1" hidden> -->
-                        <li class="home__nav-item">
-                            <input type="checkbox" name="" id="td1" class="input__check active" hidden>
-                            <!-- <input class="form-check-input" type="radio" name="okeb" id="td1" hidden> -->
-                            <label onclick="return nav__son(this)" for="td1" id="btn__td1__son1__up1__down1" class="home__nav-item-title">
+                        <li onclick="return ope(this)" id="td4" class="home__nav-item expanded">
+                            <label  for="td1" id="btn__td1__son1__up1__down1" class="home__nav-item-title">
                                 <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-fighter-jet"></i> DxLaunch</span> 
                                 <span class="home__nav-item-title-icon">
                                     <i id="up1" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up"></i> 
                                     <i id="down1" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </label>
-                            <ul id="son1" class="home__nav-son">
+                            <ul id="td4_son" class="home__nav-son none">
                                 <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
                                     <a href="" class="home__nav-son-item-link">Dashboard</a>
@@ -60,17 +57,15 @@
                             </ul>
                         </li>
 
-                        <li class="home__nav-item">
-                            <input type="checkbox" name="" id="td2" hidden>
-                            <!-- <input class="form-check-input" type="radio" name="okeb" id="td2" hidden> -->
-                            <label onclick="return nav__son(this)" for="td2" id="btn__td2__son2__up2__down2" class="home__nav-item-title">
+                        <li onclick="return ope(this)" id="td5" class="home__nav-item expanded">
+                            <label  for="td2" id="btn__td2__son2__up2__down2" class="home__nav-item-title">
                                 <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-bolt"></i> DxFairLaunch</span> 
                                 <span class="home__nav-item-title-icon">
                                     <i id="up2" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up"></i> 
                                     <i id="down2" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </label>
-                            <ul id="son2" class="home__nav-son">
+                            <ul id="td5_son" class="home__nav-son none">
                                 <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
                                     <a href="" class="home__nav-son-item-link">Dashboard</a>
@@ -80,16 +75,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="home__nav-item">
-                            <input type="checkbox" name="" id="td3" hidden>
-                            <label onclick="return nav__son(this)" for="td3" id="btn__td3__son3__up3__down3" class="home__nav-item-title">
+                        <li onclick="return ope(this)" id="td6" class="home__nav-item expanded">
+                            <label  for="td3" id="btn__td3__son3__up3__down3" class="home__nav-item-title">
                                 <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-lock-alt"></i> DxLock </span> 
                                 <span class="home__nav-item-title-icon">
                                     <i id="up3" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up"></i> 
                                     <i id="down3" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </label>
-                            <ul id="son3" class="home__nav-son">
+                            <ul id="td6_son" class="home__nav-son none">
                                 <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
                                     <a href="" class="home__nav-son-item-link">Dashboard</a>
@@ -99,16 +93,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="home__nav-item">
-                            <input type="checkbox" name="" id="td4" hidden>
-                            <label onclick="return nav__son(this)" for="td4" id="btn__td4__son4__up4__down4" class="home__nav-item-title">
+                        <li onclick="return ope(this)" id="td7" class="home__nav-item expanded">
+                            <label for="td4" id="btn__td4__son4__up4__down4" class="home__nav-item-title">
                                 <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-fingerprint"></i> Sercurity</span> 
                                 <span class="home__nav-item-title-icon">
                                     <i id="up4" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up"></i> 
                                     <i id="down4" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </label>
-                            <ul id="son4" class="home__nav-son">
+                            <ul id="td7_son" class="home__nav-son none">
                                 <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
                                     <a href="" class="home__nav-son-item-link">Dashboard</a>
@@ -118,16 +111,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="home__nav-item">
-                            <input type="checkbox" name="" id="td5" hidden>
-                            <label onclick="return nav__son(this)" for="td5" id="btn__td5__son5__up5__down5" class="home__nav-item-title">
+                        <li onclick="return ope(this)" id="td8" class="home__nav-item expanded">
+                            <label for="td5" id="btn__td5__son5__up5__down5" class="home__nav-item-title">
                                 <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-key-skeleton"></i> DxSale DAO</span> 
                                 <span class="home__nav-item-title-icon">
                                     <i id="up5" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up"></i> 
                                     <i id="down5" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </label>
-                            <ul id="son5" class="home__nav-son">
+                            <ul id="td8_son" class="home__nav-son none">
                                 <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
                                     <a href="" class="home__nav-son-item-link">Dashboard</a>
@@ -137,16 +129,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="home__nav-item">
-                            <input type="checkbox" name="" id="td6" hidden>
-                            <label onclick="return nav__son(this)" for="td6" id="btn__td6__son6__up6__down6" class="home__nav-item-title">
+                        <li onclick="return ope(this)" id="td9" class="home__nav-item expanded">
+                            <label  for="td6" id="btn__td6__son6__up6__down6" class="home__nav-item-title">
                                 <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-folder"></i> Archives </span> 
                                 <span class="home__nav-item-title-icon">
                                     <i id="up6" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up"></i> 
                                     <i id="down6" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </label>
-                            <ul id="son6" class="home__nav-son">
+                            <ul id="td9_son" class="home__nav-son none">
                                 <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
                                     <a href="" class="home__nav-son-item-link">Dashboard</a>
@@ -180,6 +171,7 @@
     </div>
 </body>
 <!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
 </html>

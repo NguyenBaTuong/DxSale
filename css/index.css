@@ -113,7 +113,7 @@
 }
 
 .home__nav-son {
-    display: none;
+    /* display: none; */
     margin-top: 10px;
     animation: nextBot 0.2s linear;
     padding-left: 0;
