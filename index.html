@@ -8,40 +8,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./libs/font-awesome/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container-fluid home-block">
-        <div class="home row">
-            <div class="col-lg-2 home__nav-block">
+        <div id="home" class="home">
+            <input type="checkbox" name="" id="slider" class="control__slider" hidden>
+            <div id="sliderxbox" class="home__nav-block">
+                <label id="control__label" onclick="compact()" for="slider" class="home__nav-control">
+                    <i class="fas fa-bars home__nav-control-icon"></i>
+                </label>
                 <div id="nav__scroll" class="home__nav">
-                    <div class="home__nav-i4">
+                    <div id="home__nav__i4" class="home__nav-i4">
                         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgb3BhY2l0eTogMC45OTk7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMTExcHg7CiAgICAgICAgZm9udC1mYW1pbHk6IEJhaG5zY2hyaWZ0OwogICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsdGVyOiB1cmwoI1JlY3RhbmdsZV8xKTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxmaWx0ZXIgaWQ9IlJlY3RhbmdsZV8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGZlT2Zmc2V0IGR4PSIzIiBkeT0iMyIgaW5wdXQ9IlNvdXJjZUFscGhhIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjUiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwLjE2MSIvPgogICAgICA8ZmVDb21wb3NpdGUgb3BlcmF0b3I9ImluIiBpbjI9ImJsdXIiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMiIGRhdGEtbmFtZT0iR3JvdXAgMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSA0KSI+CiAgICA8ZyBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC01LCAtNCkiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgcng9IjQ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjcuNDQyIDY4LjY1MikiPgogICAgICA8dGV4dCBpZD0iRHgiIGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuNTU4IDExNy4zNDgpIj48dHNwYW4geD0iLTU1LjQ0NiIgeT0iMCI+RHg8L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" class="home__nav-i4-logo">
                         <span class="home__nav-i4-name">Version 3.0</span>
                     </div>
                     <ul class="home__nav-list">
                         <li onclick="return ope(this)" id="td1" class="home__nav-item">
                             <a class="home__nav-item-link">
-                                <i class="home__nav-item-icon fas fa-home"></i> Home
+                                <i id="log1" class="home__nav-item-icon fas fa-home"></i> 
+                                <span id="name1" class="home__nav-item-name">Home</span>
                             </a>
                         </li>
                         <li onclick="return ope(this)" id="td2" class="home__nav-item">
                             <a href="" class="home__nav-item-link">
-                                <i class="home__nav-item-icon fab fa-btc"></i> DxMint
+                                <i id="log2" class="home__nav-item-icon fab fa-btc"></i> 
+                                <span id="name2" class="home__nav-item-name">DxMint</span>
                             </a>
                         </li>
                         <li onclick="return ope(this)" id="td3" class="home__nav-item">
                             <a href="" class="home__nav-item-link">
-                                <i class="home__nav-item-icon fas fa-tint"></i> DxDrop 
+                                <i class="home__nav-item-icon fas fa-tint"></i>  
+                                <span id="name3" class="home__nav-item-name">DxDrop</span>
                             </a>
                         </li>
                         <li onclick="return ope(this)" id="td4" class="home__nav-item expanded">
                             <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-fighter-jet"></i> DxLaunch</span> 
-                                <span class="home__nav-item-title-icon">
+                                <span class="home__nav-item-title-desc">
+                                    <i class="home__nav-item-icon fas fa-fighter-jet"></i> 
+                                    <span id="name4" class="home__nav-item-name">DxLaunch</span>                                   
+                                </span> 
+                                <span id="stt1" class="home__nav-item-title-icon">
                                     <i id="td4_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
                                     <i id="td4_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
@@ -56,11 +65,13 @@
                                 </li>
                             </ul>
                         </li>
-
                         <li onclick="return ope(this)" id="td5" class="home__nav-item expanded">
                             <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-bolt"></i> DxFairLaunch</span> 
-                                <span class="home__nav-item-title-icon">
+                                <span class="home__nav-item-title-desc">
+                                    <i class="home__nav-item-icon fas fa-bolt"></i> 
+                                    <span id="name5" class="home__nav-item-name">DxFairLaunch</span>
+                                </span> 
+                                <span  id="stt2" class="home__nav-item-title-icon">
                                     <i id="td5_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
                                     <i id="td5_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
@@ -77,80 +88,116 @@
                         </li>
                         <li onclick="return ope(this)" id="td6" class="home__nav-item expanded">
                             <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-lock-alt"></i> DxLock </span> 
-                                <span class="home__nav-item-title-icon">
+                                <span class="home__nav-item-title-desc">
+                                    <i class="home__nav-item-icon fas fa-lock-alt"></i> 
+                                    <span id="name6" class="home__nav-item-name">DxLock</span> 
+                                </span> 
+                                <span  id="stt3" class="home__nav-item-title-icon">
                                     <i id="td6_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
                                     <i id="td6_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </div>
                             <ul id="td6_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Launchpad</li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Dashboard</a>
+                                    <a href="" class="home__nav-son-item-link">View Lockers</a>
+                                </li>
+                                <li class="home__nav-son-item-title">Lock or Manage Assets</li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">Lock LP Tokens</a>
                                 </li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Start or Manage</a>
+                                    <a href="" class="home__nav-son-item-link">Lock Tokens</a>
                                 </li>
                             </ul>
                         </li>
                         <li onclick="return ope(this)" id="td7" class="home__nav-item expanded">
                             <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-fingerprint"></i> Sercurity</span> 
-                                <span class="home__nav-item-title-icon">
+                                <span class="home__nav-item-title-desc">
+                                    <i class="home__nav-item-icon fas fa-fingerprint"></i> 
+                                    <span id="name7" class="home__nav-item-name">Sercurity</span>
+                                </span> 
+                                <span id="stt4" class="home__nav-item-title-icon">
                                     <i id="td7_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
                                     <i id="td7_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </div>
                             <ul id="td7_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Launchpad</li>
+                                <li class="home__nav-son-item-title">Partner Portals</li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Dashboard</a>
+                                    <a href="" class="home__nav-son-item-link">Audit</a>
                                 </li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Start or Manage</a>
+                                    <a href="" class="home__nav-son-item-link">KYC</a>
                                 </li>
                             </ul>
                         </li>
                         <li onclick="return ope(this)" id="td8" class="home__nav-item expanded">
                             <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-key-skeleton"></i> DxSale DAO</span> 
-                                <span class="home__nav-item-title-icon">
+                                <span class="home__nav-item-title-desc">
+                                    <i class="home__nav-item-icon fas fa-key-skeleton"></i> 
+                                    <span id="name8" class="home__nav-item-name">DxSale DAO</span>
+                                </span> 
+                                <span id="stt5" class="home__nav-item-title-icon">
                                     <i id="td8_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
                                     <i id="td8_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </div>
                             <ul id="td8_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Launchpad</li>
+                                <li class="home__nav-son-item-title">SALE Token Tools</li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Dashboard</a>
+                                    <a href="" class="home__nav-son-item-link">Fee Management</a>
                                 </li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Start or Manage</a>
+                                    <a href="" class="home__nav-son-item-link">ETH BSC Bridge</a>
                                 </li>
                             </ul>
                         </li>
                         <li onclick="return ope(this)" id="td9" class="home__nav-item expanded">
                             <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc"><i class="home__nav-item-icon fas fa-folder"></i> Archives </span> 
-                                <span class="home__nav-item-title-icon">
+                                <span class="home__nav-item-title-desc">
+                                    <i class="home__nav-item-icon fas fa-folder"></i> 
+                                    <span id="name9" class="home__nav-item-name">Archives</span> 
+                                </span> 
+                                <span id="stt6" class="home__nav-item-title-icon">
                                     <i id="td9_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
                                     <i id="td9_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
                                 </span>
                             </div>
                             <ul id="td9_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Launchpad</li>
+                                <li class="home__nav-son-item-title">V2.9</li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Dashboard</a>
+                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
                                 </li>
                                 <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Start or Manage</a>
+                                    <a href="" class="home__nav-son-item-link">DxLock</a>
+                                </li>
+                                <li class="home__nav-son-item-title">V2.5</li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                </li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">DxLock</a>
+                                </li>
+                                <li class="home__nav-son-item-title">V1 DEFI</li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                </li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">DxLock</a>
+                                </li>
+                                <li class="home__nav-son-item-title">V1 Standard</li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                </li>
+                                <li class="home__nav-son-item">
+                                    <a href="" class="home__nav-son-item-link">DxStake</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-10 home__content">
+            <div id="home__content" class="home__content">
                 <div class="home__content-header">
                     <div class="home__content-header-zoom"></div>
                     <div class="home__content-header-acti">
@@ -161,17 +208,125 @@
                             <i class="fas fa-book-open"></i>
                         </button>
                         <div class="home__content-header-acti-detail">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgb3BhY2l0eTogMC45OTk7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMTExcHg7CiAgICAgICAgZm9udC1mYW1pbHk6IEJhaG5zY2hyaWZ0OwogICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsdGVyOiB1cmwoI1JlY3RhbmdsZV8xKTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxmaWx0ZXIgaWQ9IlJlY3RhbmdsZV8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGZlT2Zmc2V0IGR4PSIzIiBkeT0iMyIgaW5wdXQ9IlNvdXJjZUFscGhhIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjUiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwLjE2MSIvPgogICAgICA8ZmVDb21wb3NpdGUgb3BlcmF0b3I9ImluIiBpbjI9ImJsdXIiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMiIGRhdGEtbmFtZT0iR3JvdXAgMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSA0KSI+CiAgICA8ZyBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC01LCAtNCkiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgcng9IjQ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjcuNDQyIDY4LjY1MikiPgogICAgICA8dGV4dCBpZD0iRHgiIGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuNTU4IDExNy4zNDgpIj48dHNwYW4geD0iLTU1LjQ0NiIgeT0iMCI+RHg8L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" class="home__nav-i4-logo">
-
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgb3BhY2l0eTogMC45OTk7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMTExcHg7CiAgICAgICAgZm9udC1mYW1pbHk6IEJhaG5zY2hyaWZ0OwogICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsdGVyOiB1cmwoI1JlY3RhbmdsZV8xKTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxmaWx0ZXIgaWQ9IlJlY3RhbmdsZV8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGZlT2Zmc2V0IGR4PSIzIiBkeT0iMyIgaW5wdXQ9IlNvdXJjZUFscGhhIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjUiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwLjE2MSIvPgogICAgICA8ZmVDb21wb3NpdGUgb3BlcmF0b3I9ImluIiBpbjI9ImJsdXIiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMiIGRhdGEtbmFtZT0iR3JvdXAgMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSA0KSI+CiAgICA8ZyBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC01LCAtNCkiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgcng9IjQ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjcuNDQyIDY4LjY1MikiPgogICAgICA8dGV4dCBpZD0iRHgiIGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuNTU4IDExNy4zNDgpIj48dHNwYW4geD0iLTU1LjQ0NiIgeT0iMCI+RHg8L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" class="home__content-header-acti-detail-logo">
+                            $9.999
                         </div>
+                        <button class="home__content-header-acti-control">
+                            Buy sale
+                        </button>
+                    </div>
+                </div>
+                <div class="home__content-body">
+                    <div class="home__content-body-box-block">
+                        <div class="home__content-body-box home__content-body-box--diss">
+                            <div class="home__content-body-box-header">
+                                <h2 class="home__content-body-box-title">DxMint</h2>
+                                <h3 class="home__content-body-box-desc">Create Audited, Custom Tokens with no code required</h3>
+                            </div>
+                            <div class="home__content-body-box-list">
+                                <div class="home__content-body-box-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="font-size: 20px;"><path d="M6 16.5l-3 2.94V11h3m5 3.66l-1.57-1.34L8 14.64V7h3m5 6l-3 3V3h3m2.81 9.81L17 11h5v5l-1.79-1.79L13 21.36l-3.47-3.02L5.75 22H3l6.47-6.34L13 18.64" fill="currentColor"></path></svg>
+                                    <h4 class="home__content-body-box-item-desc">26,546,372  MCAP</h4>
+                                </div>
+                                <div class="home__content-body-box-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="font-size: 20px;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm1 14.915V18h-2v-1.08c-2.339-.367-3-2.002-3-2.92h2c.011.143.159 1 2 1c1.38 0 2-.585 2-1c0-.324 0-1-2-1c-3.48 0-4-1.88-4-3c0-1.288 1.029-2.584 3-2.915V6.012h2v1.109c1.734.41 2.4 1.853 2.4 2.879h-1l-1 .018C13.386 9.638 13.185 9 12 9c-1.299 0-2 .516-2 1c0 .374 0 1 2 1c3.48 0 4 1.88 4 3c0 1.288-1.029 2.584-3 2.915z" fill="currentColor"></path></svg>
+                                    <h4 class="home__content-body-box-item-desc">26,546,372  MCAP</h4>
+                                </div>
+                                <div class="home__content-body-box-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="font-size: 20px;"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M40 30V15L27.5 7.969m-7 0L8 15v15m3 4.688L24 42l8-4.5l5-2.813"></path><path d="M21 18.75l-3 1.75v7l3 1.75L24 31l3-1.75l3-1.75v-7l-3-1.75L24 17l-3 1.75z"></path><path d="M24 17v-7"></path><path d="M30 27l7 4"></path><path d="M18 27l-7 4"></path><circle cx="24" cy="7" r="3"></circle><circle cx="8" cy="33" r="3"></circle><circle cx="40" cy="33" r="3"></circle></g></svg>
+                                    <h4 class="home__content-body-box-item-desc">26,546,372  MCAP</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__content-body-box-block">
+                        <a href="" class="home__content-body-box bgr--green">
+                            <div class="home__content-body-box-header">
+                                <h2 class="home__content-body-box-title">DxSale.Network</h2>
+                                <h3 class="home__content-body-box-desc">Decentralized, Multi-Chain, Token Management Platform as a Service</h3>
+                            </div>
+                            <div class="home__content-body-box-list">
+                                <div class="home__content-body-box-item">
+                                    <h2 class="home__content-body-box-item-number">502+</h2>
+                                    <h4 class="home__content-body-box-item-desc">Standard Tokens Minted</h4>
+                                </div>
+                                <div class="home__content-body-box-item">
+                                    <h2 class="home__content-body-box-item-number">502+</h2>
+                                    <h4 class="home__content-body-box-item-desc">Liquidity Generator Minted</h4>
+                                </div>
+                                <div class="home__content-body-box-item">
+                                    <h2 class="home__content-body-box-item-number">502+</h2>
+                                    <h4 class="home__content-body-box-item-desc">Total Chain Minted</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__content-body-box-block">
+                        <a href="" class="home__content-body-box bgr--yel">
+                            <div class="home__content-body-box-header">
+                                <h2 class="home__content-body-box-title">DxDrop</h2>
+                                <h3 class="home__content-body-box-desc">Airdrop tokens or disperse payments with the click of a button</h3>
+                                <h3 class="home__content-body-box-text">Part of the DxSale V3 Release</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__content-body-box-block">
+                        <a href="" class="home__content-body-box bgr--blu">
+                            <div class="home__content-body-box-header">
+                                <h2 class="home__content-body-box-title">DxSale.Network</h2>
+                                <h3 class="home__content-body-box-desc">Decentralized, Multi-Chain, Token Management Platform as a Service</h3>
+                            </div>
+                            <div class="home__content-body-box-list">
+                                <div class="home__content-body-box-item">
+                                    <h2 class="home__content-body-box-item-number">502+</h2>
+                                    <h4 class="home__content-body-box-item-desc">Presales Created</h4>
+                                </div>
+                                <div class="home__content-body-box-item">
+                                    <h2 class="home__content-body-box-item-number">502+</h2>
+                                    <h4 class="home__content-body-box-item-desc">USD Raised</h4>
+                                </div>
+                                <div class="home__content-body-box-item">
+                                    <h2 class="home__content-body-box-item-number">502+</h2>
+                                    <h4 class="home__content-body-box-item-desc">USD Saved</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__content-body-box-block">
+                        <a href="" class="home__content-body-box bgr--opacblu">
+                            <div class="home__content-body-box-header">
+                                <h2 class="home__content-body-box-title">DxFairLaunch</h2>
+                                <h3 class="home__content-body-box-desc">The best of DxLaunch in the Fair Launch Space</h3>
+                                <h3 class="home__content-body-box-text">Part of the DxSale V3 Release</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__content-body-box-block">
+                        <a href="" class="home__content-body-box bgr--pin">
+                            <div class="home__content-body-box-header">
+                                <h2 class="home__content-body-box-title">DxLock</h2>
+                                <h3 class="home__content-body-box-desc">Lock your token or Liquidity Tokens</h3>
+                                <h3 class="home__content-body-box-text">$100,000,000+ TVL</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__content-footer">
+                    <div class="home__content-footer-logo-block">
+                        <img src="https://dxsale.network/assets/media/dx-logo-200.png" alt="" class="home__content-footer-logo">
+                    </div>
+                    <div class="home__content-footer-desc">
+                        <a href="" class="home__content-footer-desc-text">Terms And Conditions</a>
+                        <a href="" class="home__content-footer-desc-text">Privacy Policy</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<!-- JavaScript Bundle with Popper -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
 </html>
