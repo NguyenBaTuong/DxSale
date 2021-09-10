@@ -64,6 +64,7 @@ html {
 
 body {
     margin: 0;
+    color: var(--black__color);
 }
 
 .modal {
@@ -120,6 +121,15 @@ body {
 
 .btn--diss:hover {
     color: rgba(0, 0, 0, 0.26);
+}
+
+.btn--diss-b {
+    color: var(--black__color);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn--diss-b:hover {
+    color: var(--black__color);
 }
 
 .btn--nobgr {
@@ -599,6 +609,7 @@ body {
     height: 44px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .home__content-header-acti-detail-logo {

@@ -1,0 +1,76 @@
+
+.DxFarilxStart {
+    padding: 0 20px;
+}
+
+.DxFarilxStart__open {
+    padding: 20px;
+}
+
+.DxFarilxDash__start-root {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.DxFarilxDash__start-root-input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.DxFarilxDash__start-root-inputa {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.DxFarilxDash__start-root-desc {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.DxFarilxDash__start-root-desc--hot {
+    color: red;
+}
+
+#dxf__start__second {
+    display: none;
+}
+
+.dxf__start__id__qr:checked ~ .modal {
+    display: flex;
+}
+
+.dxf__start__id__qr:checked ~ .modal .modal__overlay {
+    display: block;
+}
+
+.dxf__start__id__qr:checked ~ .modal, 
+.dxf__start__id__qr:checked ~ .modal .modal__overlay, 
+.dxf__start__id__qr:checked ~ .modal .DxFarilxDash__modal-qr {
+    animation: fadeIn ease-in 0.3s;
+}
+
+.DxFarilxStart__details-active {
+    margin-bottom: 20px;
+}
+
+.DxFarilxStart__details-stt {
+    padding: 20px;
+}
+
+.DxFarilxStart__details-stt-box {
+    padding: 16px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin-top: 16px;
+    color: var(--black__color);
+    font-size: 1.6rem;
+}
+
+.DxFarilxStart__details-stt-end {
+    min-height: 40px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
