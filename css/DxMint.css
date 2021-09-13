@@ -1,0 +1,95 @@
+.DxMint {
+    margin: 0 20px;
+}
+
+.DxMint__header {
+    padding: 20px;
+}
+
+.DxMint__body-nav-block {
+    display: flex;
+    justify-content: center;
+}
+
+.DxMint__body-nav-item {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #9B9B9B;
+    font-size: 1.3rem;
+}
+
+.DxMint__body-nav-item.active {
+    color: var(--primary__color);
+}
+
+.DxMint__body-create {
+    padding: 20px;
+}
+
+.DxMint__body-create-select {
+    border: 1px solid #ADADAD;
+    border-radius: 8px;
+    padding: 5px 5px 0;
+}
+
+.DxMint__body-create-select:focus {
+    background-color: #F2F2F2;
+}
+
+.DxMint__body-create-select-title {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.DxMint__body-create-desc {
+    margin: 20px 0 30px 0;
+    font-size: 1.3rem;
+}
+
+.DxMint__body-create-desc-bold {
+    font-weight: bold;
+}
+
+.DxMint__body-create-desc-bold-hot {
+    color: red;
+}
+
+.DxMint__body-create-desc-list {
+    padding-left: 0;
+}
+
+.DxMint__body-create-desc-item {
+    font-size: 1.3rem;
+}
+
+.DxMint__body-create-desc-item::before {
+    content: "-";
+    text-indent: -5px;
+}
+
+.DxMint__body-create-desc-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.DxMint__body-create-form-group {
+    margin-bottom: 20px;
+}
+
+.DxMint__body-create-form-acti {
+    display: flex;
+}
+
+.DxMint__body-create-form-acti-btn {
+    margin: auto;
+}
+
+.DxMint__body-manage-block {
+    display: flex;
+}
+
+.DxMint__body-manage-select {
+    width: 210px;
+    margin: 30px auto;
+}

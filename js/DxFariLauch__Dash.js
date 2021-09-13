@@ -85,3 +85,39 @@ function show__second() {
        
 }
 
+function show__fourth() {
+    var dxdash__fourth =  document.getElementById('dxdash__fourth');
+    var dxdash__thrid  = document.getElementById('dxdash__thrid');
+
+    dxdash__fourth.style.display = 'block';
+    dxdash__thrid.style.display = 'none'
+
+}
+
+// time 
+function startTime() {
+    const today = new Date();
+    let d = today.getDate();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    var show__time = document.getElementById('back__time');
+    var time = `${d}:${h}:${m}:${s}`;
+    console.log(time);
+    show__time.innerHTML = time;
+    setTimeout(startTime, 1000);
+  }
+  
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i}; 
+    return i;
+  }
+
+//   copy lock 
+function copy__lick__lock() {
+    var copyText = document.getElementById("copy__lick__lock");
+    copyText.select();
+    document.execCommand("copy");
+}

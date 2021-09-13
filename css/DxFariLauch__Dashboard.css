@@ -74,6 +74,8 @@ h2.DxFarilxDash__find-header-text {
 
 .DxFarilxDash__find-body-btn-block {
     width: 265px;
+    display: flex;
+    justify-content: center;
 }
 
 .DxFarilxDash__find-body-input-block {
@@ -251,7 +253,7 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 }
 
 .DxFarilxDash__box-footer-link {
-    color: var(--primary__color);
+    color: var(--black__color);
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -264,8 +266,8 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 }
 
 .DxFarilxDash__box-footer-link:hover {
-    color: var(--primary__color);
-    background-color: rgba(33, 150, 243, 0.05);
+    color: var(--black__color);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .DxFarilxDash__stt {
@@ -648,17 +650,23 @@ tr.DxFairlxDash__box-bet-tr {
 }
 
 /* dxdash__fourth  */
-#dxdash__first {
+/* #dxdash__first {
+    display: none;
+} */
+#dxdash__fourth {
     display: none;
 }
 
 .DxFarilxDash__lock-block {
     padding: 20px;
+    margin: 0 20px;
 }
 
 .DxFarilxDash__lock {
     background-color: var(--white__color);
     padding: 20px;
+    width: 80%;
+    box-shadow: 0px 11px 15px -7px rgb(80 80 80 / 20%), 0px 24px 38px 3px rgb(80 80 80 / 14%), 0px 9px 46px 8px rgb(80 80 80 / 12%);
 }
 
 .DxFarilxDash__lock-details-header {
@@ -667,12 +675,154 @@ tr.DxFairlxDash__box-bet-tr {
 }
 
 .DxFarilxDash__lock-details-header-title {
-    flex: 1;
+    flex-basis: 60%;
     text-align: center;
     font-size: 1.3rem;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: rgb(158, 122, 255);
     color: var(--white__color);
+    height: 25px;
+    line-height: 2.5rem;
 }
 
+.DxFarilxDash__box-footer-link-block {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
 
+.DxFarilxDash__lock-details-body-i4 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DxFarilxDash__lock-details-body-i4-img {
+    height: 70px;
+    width: 70px;
+}
+
+.DxFarilxDash__lock-details-body-i4-title {
+    margin-top: 5px;
+    font-size: 1.6rem;
+}
+
+.DxFarilxDash__lock-details-body-acti {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.DxFarilxDash__lock-details-body-acti-btn {
+    color: #969696;
+    font-size: 1.1rem;
+}
+
+.DxFarilxDash__lock-details-body-acti-btn:hover {
+    color: #969696;
+}
+
+.DxFarilxDash__lock-details-body-lock {
+    background-color: rgb(158, 122, 255);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.DxFarilxDash__lock-details-body-lock-title {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--white__color);
+    margin-bottom: 10px;
+}
+
+.DxFarilxDash__lock-details-body-lock-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    padding: 10px;
+}
+
+.DxFarilxDash__lock-details-body-lock-box-img {
+    height: 50px;
+    width: 50px;
+}
+
+.DxFarilxDash__lock-details-body-lock-box-desc {
+    font-size: 1.6rem;
+    cursor: default;
+}
+
+.DxFarilxDash__lock-details-body-hr {
+    height: 4px;
+    border-radius: 4px;
+    background-color: #64b5f6;
+    margin-top: 20px;
+}
+
+.DxFarilxDash__lock-details-body-tb-block {
+    padding-bottom: 60px;
+}
+
+.DxFarilxDash__lock-details-body-tb {
+    width: 100%;
+}
+
+.DxFarilxDash__lock-details-body-tb-tr {
+    display: flex;    
+}
+
+.DxFarilxDash__lock-details-body-tb-th {
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: default;
+}
+
+.DxFarilxDash__lock-details-body-tb-td {
+    flex: 1;
+    font-size: 1.3rem;
+    text-align: right;
+    cursor: default;
+}
+
+.DxFarilxDash__lock-details-body-end-stt {
+    padding: 20px 0;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.DxFarilxDash__lock-details-body-end-desc {
+    text-align: center;
+    color: red;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: default;
+}
+
+.DxFarilxDash__footer {
+    padding: 20px;
+    width: 80%;
+    margin-top: 30px;
+    box-shadow: 0px 11px 15px -7px rgb(80 80 80 / 20%), 0px 24px 38px 3px rgb(80 80 80 / 14%), 0px 9px 46px 8px rgb(80 80 80 / 12%);
+}
+
+.DxFarilxDash__footer-div {
+    height: 32px;
+    background-color: rgb(158, 122, 255);
+    border-radius: 16px;
+    color: var(--white__color);
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+    cursor: default;
+}
+
+.DxFarilxDash__lock-details-body-tb-block.no-padding-b {
+    padding-bottom: 0;
+}
