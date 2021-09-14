@@ -1,0 +1,48 @@
+
+.DxDrop {
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.DxDrop__header {
+    /* padding: 20px; */
+}
+
+.DxDrop__body {
+    margin-top: 20px;
+}
+
+h2.DxDrop__body-title {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.DxDrop__body-box-block {
+
+}
+
+.DxDrop__body-box {
+    padding: 20px;
+
+}
+
+.DxDrop__body-box-select {
+
+}
+
+.DxDrop__body-box-list {
+    margin-top: 20px;
+}
+
+#tab__show__1 {
+    display: block;
+}
+
+#tab__show__2 {
+    display: none;
+}
+
+.DxDrop__body-box-item--no-mb {
+    margin-bottom: 0;
+}
