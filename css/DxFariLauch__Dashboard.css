@@ -56,7 +56,7 @@
 }
 
 h2.DxFarilxDash__find-header-title {
-    color: #1565C0;
+    color: #397dca;
     font-size: 1.6rem;
     padding: 15px;
 }
@@ -192,24 +192,44 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 
 .DxFarilxDash__box-body-stt-block {
     margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 140px; */
+    /* margin-bottom: 20px; */
 }
-
+/* 
 .DxFarilxDash__box-body-stt {
     border-radius: 50%;
     border: 12px solid #2196F3;
     height: 140px;
     width: 140px;
     display: flex;
+} */
+
+#myChart {
+    margin: auto;
 }
 
 .DxFarilxDash__box-body-stt-btn {
-    margin: auto;
+    /* margin: auto; */
     font-size: 1rem;
     background-color: #90caf9;
     text-transform: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--black__color);
-    padding: 0 10px;
-    min-width: 94px;
+    /* padding: 0 10px; */
+    /* min-width: 94px; */
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%,-50%);
+    margin: 5px 0 0 0;
 }   
 
 .DxFarilxDash__box-body-stt:hover {
@@ -253,7 +273,7 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 }
 
 .DxFarilxDash__box-footer-link {
-    color: var(--black__color);
+    color: var(--primary__color);
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -266,7 +286,7 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 }
 
 .DxFarilxDash__box-footer-link:hover {
-    color: var(--black__color);
+    color: var(--primary__color);
     background-color: rgba(0, 0, 0, 0.05);
 }
 

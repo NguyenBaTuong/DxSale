@@ -1,0 +1,30 @@
+
+.daoxfee__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.daoxfee__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.daoxfee__list-item-text {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.daoxfee__details-nav {
+    margin-bottom: 0;
+}
+
+.daoxfee__details-title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}

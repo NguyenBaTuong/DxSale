@@ -230,8 +230,8 @@
                 <div class="home__content-body">
                     <input type="checkbox" name="" id="modal__box" class="modal__box" hidden>
                     <div class="DxFarilxDash__public">
-                        <div id="dxdash__first__active" class="DxFarilxDash__active bsd">
-                            <button class="DxFarilxDash__active-btn btn bgr--blu">Connect Wallet to Start</button>
+                        <div id="dxdash__first__active" class="DxFarilxDash__active flex-column bsd">
+                            <button class="DxFarilxDash__active-btn btn mb bgr--blu">Connect Wallet to Start</button>
                             <div id="dxdash__first__active__btn" class="DxFarilxDash__active-btn-block">
                                 <input type="checkbox" name="" id="id__qr" class="id__qr" hidden>
                                 <label for="id__qr" class="DxFarilxDash__active-btn btn bgr--green">
@@ -273,238 +273,68 @@
                         <div class="DxFarilxDash__find bsd">
                             <div class="DxFarilxDash__find-header">
                                 <div class="DxFarilxDash__find-header-logo-block">
-                                    <svg class="DxFarilxDash__find-header-logo sc-bdVaJa fUuvxv" fill="#000000" width="22px" height="22px" viewBox="0 0 1024 1024" rotate="0"><path d="M605.4 128l-319.4 448h191.6l-59 320 319.4-448h-191.6l59-320z"></path></svg>
+                                    <svg class="DxFarilxDash__find-header-logo sc-bdVaJa fUuvxv" fill="#000000" width="22px" height="22px" viewBox="0 0 1024 1024" rotate="0"><path d="M720 448v-144c0-114.86-93.124-208-207.968-208-114.908 0-208.032 93.14-208.032 208v144h-112v480h640v-480h-112zM528 701.984v66.016h-32v-66.016c-27.604-7.106-48-32.164-48-61.984 0-35.346 28.654-64 64-64s64 28.654 64 64c0 29.82-20.396 54.878-48 61.984zM688 448h-352v-144c0-97.046 78.968-176 176.032-176 97.030 0 175.968 78.954 175.968 176v144z M512 608c-17.644 0-32 14.356-32 32s14.356 32 32 32 32-14.356 32-32-14.356-32-32-32z"></path></svg>
                                 </div>
-                                <h2 class="DxFarilxDash__find-header-title">Decentralized Launchpad with instant Listing and Liquidity Locking</h2>
-                            </div>
-                            <div class="DxFarilxDash__find-body">
-                                <div class="DxFarilxDash__find-body-btn-block">
-                                    <a href="../components/DxFariLauch__Star.html"  class="DxFarilxDash__find-body-btn btn bgr--blu">Start/Manage Launch</a>
-                                </div>
-                                <div class="DxFarilxDash__find-body-input-block">
-                                    <input type="text" class="DxFarilxDash__find-body-input" placeholder="Search by token address (Ex. 0x97bb08ba41f033beaac315169fc566ac9e0daf52)">
-                                    <div class="DxFarilxDash__find-body-icon-block">
-                                        <i class="DxFarilxDash__find-body-icon fal fa-search"></i>
-                                        <div class="DxFarilxDash__find-body-icon-ttip ttip">
-                                            Search for presales by token address!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="DxFarilxDash__find-footer col-6 offset-3">
-                                <div class="DxFarilxDash__find-footer-item">
-                                    <button class="DxFarilxDash__find-footer-btn btn btn--nobgr">UPCOMING <i class="fal fa-play-circle"></i></button>
-                                </div>
-                                <div class="DxFarilxDash__find-footer-item">
-                                    <button class="DxFarilxDash__find-footer-btn btn btn--nobgr">SUCCESS <i class="fal fa-check-circle"></i></button>
-                                </div>
-                                <div class="DxFarilxDash__find-footer-item">
-                                    <button class="DxFarilxDash__find-footer-btn btn btn--nobgr">FAILED <i class="fal fa-times-circle"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="DxFarilxDash__box bsd col-3">
-                            <div class="DxFarilxDash__box-header">
-                                <div class="DxFarilxDash__box-header-avt">
-                                    <img class="DxFarilxDash__box-header-avt-img" src="https://i.ibb.co/HqRhtDq/logo-Placeholder.png" alt="">
-                                </div>
-                                <div class="DxFarilxDash__box-header-desc">
-                                    <h2 class="DxFarilxDash__box-header-desc-name blu-hot-h2">TST</h2>
-                                    <h2 class="DxFarilxDash__box-header-desc-name">Tester</h2>
-                                </div>
+                                <h2 class="DxFarilxDash__find-header-title">View All Lockers in DxLock</h2>
                             </div>
                             
-                            <label onclick="modal__ac()" for="modal__box" id="box__body" class="DxFarilxDash__box-body">
-                                <div class="DxFarilxDash__box-body-stt-block">
-                                    <canvas id="myChart__dxf__d" width="180" height="180"></canvas>
-                                    <div id="stt__btn" class="DxFarilxDash__box-body-stt-btn btn">Launch Success</div>
+                            <div class="DxFarilxDash__fins-details">
+                                <div class="DxMint__body-nav-block">
+                                    <div class="active__tab-nav DxMint__body-nav">
+                                        <div class="active__tab-item DxMint__body-nav-item  active">
+                                            Liquidity Locker
+                                        </div>
+                                        <div class="active__tab-item DxMint__body-nav-item">
+                                            Token Locker
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
                                 </div>
-                                <div class="DxFarilxDash__box-body-details">
-                                    <span class="DxFarilxDash__box-body-details-hot">Token %: 100</span>
-                                    <span class="DxFarilxDash__box-body-details-number">Liquidity: 0.01 ETH</span>
-                                    <span class="DxFarilxDash__box-body-details-stt">✅ DxMint Verified</span>
+                                <div class="active__tab-content">
+                                    <div class="active__tab-pane DxMint__body-pane active">
+                                        <div class="DxFarilxDash__find-body">
+                                            <div class="DxFarilxDash__find-body-btn-block">
+                                                <a href="../components/DxFariLauch__Star.html"  class="DxFarilxDash__find-body-btn btn bgr--blu">Lock or Manage Liquidity</a>
+                                            </div>
+                                            <div class="DxFarilxDash__find-body-input-block">
+                                                <input type="text" class="DxFarilxDash__find-body-input" placeholder="Search by token address for liquidity lock!">
+                                                <div class="DxFarilxDash__find-body-icon-block">
+                                                    <i class="DxFarilxDash__find-body-icon fal fa-search"></i>
+                                                    <div class="DxFarilxDash__find-body-icon-ttip ttip">
+                                                        Search for presales by token address!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="active__tab-pane DxMint__body-pane">
+                                        <div class="DxFarilxDash__find-body">
+                                            <div class="DxFarilxDash__find-body-btn-block">
+                                                <a href="../components/DxFariLauch__Star.html"  class="DxFarilxDash__find-body-btn btn bgr--blu">Lock or Manage Tokens</a>
+                                            </div>
+                                            <div class="DxFarilxDash__find-body-input-block">
+                                                <input type="text" class="DxFarilxDash__find-body-input" placeholder="Search by token address for token lock!">
+                                                <div class="DxFarilxDash__find-body-icon-block">
+                                                    <i class="DxFarilxDash__find-body-icon fal fa-search"></i>
+                                                    <div class="DxFarilxDash__find-body-icon-ttip ttip">
+                                                        Search by token address for token lock!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </label>
+                            </div>
+
+                            <div class="DxFairlxDash__find-footer">
+                                <p class="DxFairlxDash__find-footer-desc">
+                                    <span style="color: blue;">New:</span> Lockers will no longer be displayed.
+                                    <br>Lockers must be searched by token address!
+                                </p>
+                            </div>
                             
-                            <div class="DxFarilxDash__box-footer">
-                                <div class="DxFarilxDash__box-footer-icon">
-                                    <i class="fal fa-star"></i>
-                                </div>
-                                <span class="DxFarilxDash__box-footer-text">
-                                    Token <br> Launched
-                                </span>
-                                <a href="" class="DxFarilxDash__box-footer-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M6.25 4.75a1.5 1.5 0 0 0-1.5 1.5v11.5a1.5 1.5 0 0 0 1.5 1.5h11.5a1.5 1.5 0 0 0 1.5-1.5v-4a1 1 0 1 1 2 0v4a3.5 3.5 0 0 1-3.5 3.5H6.25a3.5 3.5 0 0 1-3.5-3.5V6.25a3.5 3.5 0 0 1 3.5-3.5h4a1 1 0 1 1 0 2h-4zm6.5-1a1 1 0 0 1 1-1h6.5a1 1 0 0 1 1 1v6.5a1 1 0 1 1-2 0V6.164l-4.793 4.793a1 1 0 1 1-1.414-1.414l4.793-4.793H13.75a1 1 0 0 1-1-1z" fill="currentColor"></path></g></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row DxFarilxDash__stt-block bsd">
-                            <div class="DxFarilxDash__stt col-6 offset-3">
-                                <button class="DxFarilxDash__stt-btn btn btn--diss">LOAD 4</button>
-                                <span class="DxFarilxDash__stt-number">1/1</span>
-                                <button class="DxFarilxDash__stt-btn btn btn--diss">LOAD 20</button>
-                            </div>
                         </div>
                     </div>
-                    <div id="modal__note" class="modal">
-                        <label onclick="modal__ac()" id="modal__note__overlay" for="modal__box" class="modal__overlay"></label>
-                        <div id="modal__note__body" class="modal__body">
-                            <div id="modal__note__content" class="DxFarilxDash__box-modal DxFarilxDash__box-modal--w">
-                                <div class="DxFarilxDash__box-modal-header">
-                                    Disclaimer
-                                </div>
-                                <div class="DxFarilxDash__box-modal-body">
-                                    <p class="DxFarilxDash__box-modal-body-desc">
-                                        DxSale is a decentralized software tool. Anyone can create a fair launch using their own token.
-                                        <br><br>
-                                        Tokens can be clones and can have the same name as existing coins. Token creators can pretend to be owners of the real project. Please use provided social links to research and examine every project to avoid scams.
-                                        <br><br>
-                                        In the fair launch zone project owners can load arbitrary token contracts. Please take extra caution and do your research when interacting with arbitrary tokens.
-                                        <br><br>
-                                        Please pay close attention to all token metrics shared on the SALE's page.
-                                        <br><br>
-                                        <a class="DxFarilxDash__box-modal-body-desc-link" href="https://dxsale.app/app/termsandconditions" target="_blank">Terms and Conditions</a>
-                                        <br><br>
-                                    </p>
-                                    <!-- <input type="checkbox" name="" id="input__second" > -->
-                                    <div class="DxFarilxDash__box-modal-body-root">
-                                        <input onclick="check__ac()" type="checkbox" id="root__check" class="DxFarilxDash__box-modal-body-root-input">
-                                        <label onclick="check__ac()" for="root__check" class="DxFarilxDash__box-modal-body-root-desc">
-                                            I have read and agree to the Terms and Conditions and I understand that I am responsible for doing my own research!
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="DxFarilxDash__box-modal-footer">
-                                    <div class="DxFarilxDash__box-modal-footer-btn-block">
-                                        <label onclick="modal__ac()" for="modal__box" class="DxFarilxDash__box-modal-footer-btn btn btn--diss">cancel</label>
-                                    </div>
-                                    <div class="DxFarilxDash__box-modal-footer-btn-block">
-                                        <btn onclick="modal__second()" id="btn__active" class="DxFarilxDash__box-modal-footer-btn btn btn--diss">confirm</btn>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="dxdash__second" class="DxFarilxDash__open bsd">
-                        <div class="DxFarilxDash__open-title">Disclaimer not accepted. Please accept the disclaimer to continue!</div>
-                        <br> <br>
-                        <label onclick="modal__ac()" for="modal__box">
-                            <span class="DxFarilxDash__open__btn btn bgr--blu">OPEN DISCLAIMER</span>
-                        </label>
-                    </div>
-                    <div id="dxdash__thrid" class="DxFarilxDash__details-block">
-                        <div class="DxFarilxDash__details">
-                            <div class="DxFarilxDash__details-hr bsd"></div>
-                            <div class="DxFarilxDash__box row">
-                                <div class="DxFarilxDash__box-left col-3">
-                                    <div class="DxFarilxDash__box-left-item bsd">
-                                        <div class="DxFarilxDash__box-left-item-title">Useful Links</div>
-                                        <div class="DxFarilxDash__box-left-item-desc">
-                                            <div class="DxFarilxDash__box-left-item-desc-link-block">
-                                                <a class="DxFarilxDash__box-left-item-desc-link" href="https://dextools.io/app/uniswap/pair-explorer/0xE23c6D73c586dC25A4a37f546DC181207e9b7b1d">Dextools Charts</a>  📈
-                                            </div>
-                                            <p class="DxFarilxDash__box-left-item-desc-text">
-                                                https://dextools.io/app/uniswap/pair-explorer/0xE23c6D73c586dC25A4a37f546DC181207e9b7b1d
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="DxFarilxDash__box-left-item bsd">
-                                        <div class="DxFarilxDash__box-left-item-title">DxSale Automated Warning System</div>
-                                        <div class="DxFarilxDash__box-left-item-desc">
-                                            <div class="DxFarilxDash__box-left-item-desc-number">1  Warnings Detected</div>
-                                            <div class="DxFarilxDash__box-left-item-desc-text">
-                                                <div class="DxFarilxDash__box-left-item-desc-text-hot">Liquidity Time Warning</div>
-                                                Liquidity of this sale unlocks in a very short timespan.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="DxFarilxDash__box-bet-block col-6">
-                                    <div class="DxFairlxDash__box-bet bsd">
-                                        <div class="DxFarilxDash__box-header DxFairlxDash__box-bet-item DxFairlxDash__box-bet-item--mbm">
-                                            <div class="DxFarilxDash__box-header-avt">
-                                                <img class="DxFarilxDash__box-header-avt-img" src="https://i.ibb.co/HqRhtDq/logo-Placeholder.png" alt="">
-                                            </div>
-                                            <div class="DxFarilxDash__box-header-desc">
-                                                <h2 class="DxFairlxDash__box-bet-item-name blu-hot-h2">TST</h2>
-                                                <h2 class="DxFairlxDash__box-bet-item-name">Tester</h2>
-                                            </div>
-                                        </div>
-                                        <div class="DxFairlxDash__box-bet-item">
-                                            <div class="DxFairlxDash__box-bet-item-desc">
-                                                <div class="DxFairlxDash__box-bet-item-desc-text">
-                                                    Token Address: 0xCA4037256e869cc40F66555fd54c5d02A772F937
-                                                    <div class="DxFairlxDash__box-bet-item-desc-text-hot">Do not send ETH to the token address!</div>
-                                                </div>
-                                                <div class="DxFairlxDash__box-bet-item-desc-text">
-                                                    ✅ This token is DxMint Verified (Standard Token)
-                                                </div>
-                                                <div class="DxFairlxDash__box-bet-item-desc-text z13">
-                                                    This token has already launched! Use the links below to trade the token.
-                                                </div>
-                                                <div class="DxFairlxDash__box-bet-item-btn-block">
-                                                    <a target="_blank" href="https://app.uniswap.org/#/swap?inputCurrency=0xCA4037256e869cc40F66555fd54c5d02A772F937" class="DxFairlxDash__box-bet-item-btn btn bgr--blu">
-                                                        <img class="DxFairlxDash__box-bet-item-btn-icon" src="https://app.uniswap.org/static/media/logo_white.811f9ef7.svg" alt="">
-                                                        Trade on Uniswap
-                                                    </a>
-                                                </div>
-                                                <div class="DxFairlxDash__box-bet-item-btn-block">
-                                                    <a target="_blank" href="../components/DxSale__lock.html" class="DxFairlxDash__box-bet-item-btn btn btn--diss-b">
-                                                        Dxlock locker
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <table class="DxFairlxDash__box-bet-table">
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Sale ID</th>
-                                                <td class="DxFairlxDash__box-bet-td">0</td>
-                                            </tr>
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Total Supply</th>
-                                                <td class="DxFairlxDash__box-bet-td">100000.00 TST</td>
-                                            </tr>
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Tokens For Launch</th>
-                                                <td class="DxFairlxDash__box-bet-td">100000.00 TST</td>
-                                            </tr>
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Initial Liquidity</th>
-                                                <td class="DxFairlxDash__box-bet-td">0.01 ETH</td>
-                                            </tr>
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Listing Rate</th>
-                                                <td class="DxFairlxDash__box-bet-td">9999999.999999998 TST/ETH</td>
-                                            </tr>
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Launch Time </th>
-                                                <td class="DxFairlxDash__box-bet-td">29 Aug 2021 at 12:10</td>
-                                            </tr>
-                                            <tr class="DxFairlxDash__box-bet-tr">
-                                                <th class="DxFairlxDash__box-bet-th">Liquidity Unlock Date</th>
-                                                <td class="DxFairlxDash__box-bet-td">30 Sep 2021 at 11:57</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="DxFarilxDash__box-right col-3">
-                                    <div class="DxFarilxDash__box-right-item bsd">
-                                        <div class="DxFarilxDash__box-right-item-avt">
-                                            <svg class="DxFarilxDash__box-right-item-avt-img" style="background: url(&quot;https://c.disquscdn.com/next/embed/assets/img/disqus-social-icon-dark.a621bea3e02c9fa04fd3965a3d6f424d.svg&quot;) center center / contain no-repeat; display: block; margin: auto; width: 80px; height: 80px;"></svg>
-                                        </div>
-                                        <div class="DxFarilxDash__box-right-item-desc">
-                                            Disqus seems to be taking longer than usual. 
-                                        </div>
-                                        <div class="DxFarilxDash__box-right-item-desc-link-block">
-                                            <a href="" class="DxFarilxDash__box-right-item-desc-link">Reload</a>?
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
                 <!-- content page  -->
 
@@ -527,38 +357,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="../js/index.js"></script>
 <script src="../js/DxFariLauch__Dash.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script>
-var ctx = document.getElementById('myChart__dxf__d');
-var myChart = new Chart(ctx, {
-    type: 'doughnut',
-     data : {
-        datasets: [{
-        label: 'dxf',
-        data: [100, 0],
-        backgroundColor: [
-        'rgb(54, 162, 235)',
-        '#FFFFFF'
-        ],
-        borderColor: 'transparent',
-        radius: 80,
-    }]    
-},
-    options: {
-        cutout: 70,
-        plugins: {
-            tooltip: {
-                enabled: false
-            },
-        },
-        elements: {
-            point: {
-                hoverBorderWidth: 0,
-            }
-        }
-    }
-});
-</script>
+<script src="../js/view__lock.js"></script>
 </html>

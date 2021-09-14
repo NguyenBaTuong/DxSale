@@ -115,6 +115,14 @@ body {
     align-items: center;
 }
 
+.btn--blue {
+    color: #2196F3;
+}
+
+.btn--blue:hover {
+    color: #2196F3;
+}
+
 .btn:focus {
     box-shadow: none;
 }
@@ -584,7 +592,8 @@ body {
 .options li:hover {
     background-color: #39f;
     color: white;
-}
+}	
+
 
 /* keyf  */
 @keyframes nextBot {
@@ -660,7 +669,32 @@ body {
 }
 
 .bgr--green {
-    background-color: #03af76;
+    background-color: #00BFA5;
+    color: #FFFFFF;
+}
+
+.dao-bgr--green {
+    background-color: rgb(3, 175, 118);
+    color: #FFFFFF;
+}
+
+.dao-bgr--yel {
+    background-color: rgb(236, 243, 141);
+    color: var(--black__color);
+}
+
+.dao-bgr--blu {
+    background-color: rgb(89, 138, 238);
+    color: #FFFFFF;
+}
+
+.dao-bgr--pur {
+    background-color: rgb(81, 223, 228);
+    color: var(--black__color);
+}
+
+.dao-bgr--pin {
+    background-color: rgb(248, 108, 150);
     color: #FFFFFF;
 }
 
@@ -678,7 +712,8 @@ body {
 }
 
 .bgr--blu {
-    background-color: #598aee;
+    /* background-color: #598aee; */
+    background-color: #2196F3;
     color: #FFFFFF;
 }
 
@@ -703,7 +738,6 @@ body {
 .bgr--pin:hover {
     color: #FFFFFF;
 }
-
 
 .home-block {
     padding: 0;

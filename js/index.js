@@ -83,74 +83,81 @@ $(document).ready(function () {
 });
 
 
-// // select 
-// var x, i, j, l, ll, selElmnt, a, b, c;
-// x = document.getElementsByClassName("custom-select");
-// l = x.length;
-// for (i = 0; i < l; i++) {
-//   selElmnt = x[i].getElementsByTagName("select")[0];
-//   ll = selElmnt.length;
-//   a = document.createElement("DIV");
-//   a.setAttribute("class", "select-selected");
-//   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-//   x[i].appendChild(a);
-//   b = document.createElement("DIV");
-//   b.setAttribute("class", "select-items select-hide");
-//   for (j = 1; j < ll; j++) {
-//     c = document.createElement("DIV");
-//     c.innerHTML = selElmnt.options[j].innerHTML;
-//     c.addEventListener("click", function(e) {
-//         var y, i, k, s, h, sl, yl;
-//         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-//         sl = s.length;
-//         h = this.parentNode.previousSibling;
-//         for (i = 0; i < sl; i++) {
-//           if (s.options[i].innerHTML == this.innerHTML) {
-//             s.selectedIndex = i;
-//             h.innerHTML = this.innerHTML;
-//             y = this.parentNode.getElementsByClassName("same-as-selected");
-//             yl = y.length;
-//             for (k = 0; k < yl; k++) {
-//               y[k].removeAttribute("class");
-//             }
-//             this.setAttribute("class", "same-as-selected");
-//             break;
-//           }
-//         }
-//         h.click();
-//     });
-//     b.appendChild(c);
-//   }
-//   x[i].appendChild(b);
-//   a.addEventListener("click", function(e) {
-//     var select__bb = document.getElementById("select__bb");
-//     select__bb.style.borderBottom = '1px solid var(--primary__color)';
-//     e.stopPropagation();
-//     closeAllSelect(this);
-//     this.nextSibling.classList.toggle("select-hide");
-//     this.classList.toggle("select-arrow-active");
-//   });
-// }
+// select
 
-// function closeAllSelect(elmnt) {
-//   var x, y, i, xl, yl, arrNo = [];
-//   x = document.getElementsByClassName("select-items");
-//   y = document.getElementsByClassName("select-selected");
-//   xl = x.length;
-//   yl = y.length;
-//   for (i = 0; i < yl; i++) {
-//     if (elmnt == y[i]) {
-//       arrNo.push(i)
-//     } else {
-//       y[i].classList.remove("select-arrow-active");
-//     }
-//   }
-//   for (i = 0; i < xl; i++) {
-//     if (arrNo.indexOf(i)) {
-//       x[i].classList.add("select-hide");
-//     }
-//   }
-// }
-// // var select__bb1 = document.getElementById("select__bb");
-// //     select__bb1.style.borderBottom = '1px solid red';
-// document.addEventListener("click", closeAllSelect);
+$('select').each(function () {
+
+    // Cache the number of options
+    var $this = $(this),
+        numberOfOptions = $(this).children('option').length;
+  
+    // Hides the select element
+    $this.addClass('s-hidden');
+  
+    // Wrap the select element in a div
+    $this.wrap('<div class="select"></div>');
+  
+    // Insert a styled div to sit over the top of the hidden select element
+    $this.after('<div class="styledSelect"></div>');
+  
+    // Cache the styled div
+    var $styledSelect = $this.next('div.styledSelect');
+  
+    // Show the first select option in the styled div
+    $styledSelect.text($this.children('option').eq(0).text());
+  
+    // Insert an unordered list after the styled div and also cache the list
+    var $list = $('<ul />', {
+        'class': 'options'
+    }).insertAfter($styledSelect);
+  
+    // Insert a list item into the unordered list for each select option
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+  
+    // Cache the list items
+    var $listItems = $list.children('li');
+  
+    // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+    $styledSelect.click(function (e) {
+        // var drop__select__bb = document.getElementById('drop__select__bb');
+        // select__contro.css('backgroud','red');
+        // drop__select__bb.css('border-bottom','1px solid red');
+        e.stopPropagation();
+        $('div.styledSelect.active').each(function () {
+            $(this).removeClass('active').next('ul.options').hide();
+        });
+        $(this).toggleClass('active').next('ul.options').toggle();
+    });
+  
+    // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
+    // Updates the select element to have the value of the equivalent option
+    $listItems.click(function (e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        var tab__show__1 = $('#tab__show__1');
+        var tab__show__2 = $('#tab__show__2');
+        if ($this.val() == 1 ) {
+          tab__show__1.css('display', 'block');
+          tab__show__2.css('display', 'none');
+        } else {
+          tab__show__2.css('display', 'block');
+          tab__show__1.css('display', 'none');
+          
+        }
+        /* alert($this.val()); Uncomment this for demonstration! */
+    });
+  
+    // Hides the unordered list when clicking outside of it
+    $(document).click(function () {
+        $styledSelect.removeClass('active');
+        $list.hide();
+    });
+  
+  });
