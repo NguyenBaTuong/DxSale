@@ -230,8 +230,8 @@
                 <div class="home__content-body">
                     <input type="checkbox" name="" id="modal__box" class="modal__box" hidden>
                     <div class="DxFarilxDash__public">
-                        <div id="dxdash__first__active" class="DxFarilxDash__active flex-column bsd">
-                            <button class="DxFarilxDash__active-btn mb btn bgr--blu">Connect Wallet to Start</button>
+                        <div id="dxdash__first__active" class="DxFarilxDash__active bsd">
+                            <button class="DxFarilxDash__active-btn btn bgr--blu">Connect Wallet to Start</button>
                             <div id="dxdash__first__active__btn" class="DxFarilxDash__active-btn-block">
                                 <input type="checkbox" name="" id="id__qr" class="id__qr" hidden>
                                 <label for="id__qr" class="DxFarilxDash__active-btn btn bgr--green">
@@ -269,150 +269,24 @@
                             </div>   
                         </div>
                     </div>
-                   
-                    <div id="modal__note" class="modal">
-                        <label onclick="modal__ac()" id="modal__note__overlay" for="modal__box" class="modal__overlay"></label>
-                        <div id="modal__note__body" class="modal__body">
-                            <div id="modal__note__content" class="DxFarilxDash__box-modal DxFarilxDash__box-modal--w">
-                                <div class="DxFarilxDash__box-modal-header">
-                                    Disclaimer
-                                </div>
-                                <div class="DxFarilxDash__box-modal-body">
-                                    <p class="DxFarilxDash__box-modal-body-desc">
-                                        DxSale is a decentralized software tool. Anyone can create a fair launch using their own token.
-                                        <br><br>
-                                        Tokens can be clones and can have the same name as existing coins. Token creators can pretend to be owners of the real project. Please use provided social links to research and examine every project to avoid scams.
-                                        <br><br>
-                                        In the fair launch zone project owners can load arbitrary token contracts. Please take extra caution and do your research when interacting with arbitrary tokens.
-                                        <br><br>
-                                        Please pay close attention to all token metrics shared on the SALE's page.
-                                        <br><br>
-                                        <a class="DxFarilxDash__box-modal-body-desc-link" href="https://dxsale.app/app/termsandconditions" target="_blank">Terms and Conditions</a>
-                                        <br><br>
-                                    </p>
-                                    <!-- <input type="checkbox" name="" id="input__second" > -->
-                                    <div class="DxFarilxDash__box-modal-body-root">
-                                        <input onclick="check__ac()" type="checkbox" id="root__check" class="DxFarilxDash__box-modal-body-root-input">
-                                        <label onclick="check__ac()" for="root__check" class="DxFarilxDash__box-modal-body-root-desc">
-                                            I have read and agree to the Terms and Conditions and I understand that I am responsible for doing my own research!
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="DxFarilxDash__box-modal-footer">
-                                    <div class="DxFarilxDash__box-modal-footer-btn-block">
-                                        <label onclick="modal__ac()" for="modal__box" class="DxFarilxDash__box-modal-footer-btn btn btn--diss">cancel</label>
-                                    </div>
-                                    <div class="DxFarilxDash__box-modal-footer-btn-block">
-                                        <btn onclick="modal__second()" id="btn__active" class="DxFarilxDash__box-modal-footer-btn btn btn--diss">confirm</btn>
-                                    </div>
-                                </div>
+                    <div class="daoxeth-block row">
+                        <div class="daoxeth col-8 offset-2 bsd">
+                            <div class="daoxeth__i4">
+                                <img class="daoxeth__i4-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM0IiBoZWlnaHQ9IjEzNCIgdmlld0JveD0iMCAwIDEzNCAxMzQiPgogIDxkZWZzPgogICAgPGZpbHRlciBpZD0iUmVjdGFuZ2xlXzEiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMzQiIGhlaWdodD0iMTM0IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8ZmVPZmZzZXQgZHk9IjMiIGlucHV0PSJTb3VyY2VBbHBoYSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIzIiByZXN1bHQ9ImJsdXIiLz4KICAgICAgPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMC4xNjEiLz4KICAgICAgPGZlQ29tcG9zaXRlIG9wZXJhdG9yPSJpbiIgaW4yPSJibHVyIi8+CiAgICAgIDxmZUNvbXBvc2l0ZSBpbj0iU291cmNlR3JhcGhpYyIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGlkPSJHcm91cF8zIiBkYXRhLW5hbWU9Ikdyb3VwIDMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgLTIpIj4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcgOCkiPgogICAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtOSwgLTYpIiBmaWx0ZXI9InVybCgjUmVjdGFuZ2xlXzEpIj4KICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIxMTYiIHJ4PSIyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOSA2KSIgZmlsbD0iI2ZmZiIvPgogICAgICA8L2c+CiAgICAgIDxnIGlkPSJHcm91cF8xLTIiIGRhdGEtbmFtZT0iR3JvdXAgMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzYuMjYxIDM1LjUyNCkiIG9wYWNpdHk9IjAuOTk5IiBzdHlsZT0iaXNvbGF0aW9uOiBpc29sYXRlIj4KICAgICAgICA8dGV4dCBpZD0iRHgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjI2MSAzNi40NzYpIiBmb250LXNpemU9IjQ1IiBmb250LWZhbWlseT0iQmFobnNjaHJpZnQiIGZvbnQtd2VpZ2h0PSI2MDAiPjx0c3BhbiB4PSIwIiB5PSIwIj5EeDwvdHNwYW4+PC90ZXh0PgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" alt="">
+                                <span class="daoxeth__i4-title">Bridge</span>
                             </div>
-                        </div>
-                    </div>
-                    <div id="dxdash__second" class="DxFarilxDash__open bsd">
-                        <div class="DxFarilxDash__open-title">Disclaimer not accepted. Please accept the disclaimer to continue!</div>
-                        <br> <br>
-                        <label onclick="modal__ac()" for="modal__box">
-                            <span class="DxFarilxDash__open__btn btn bgr--blu">OPEN DISCLAIMER</span>
-                        </label>
-                    </div>
-                    
-                    <div style="display: block;" id="dxdash__fourth" class="DxFarilxDash__lock-block bsd">
-                        <div class="DxFarilxDash__lock bsd">
-                            <div Single Lockerdiv class="DxFarilxDash__find-header">
-                                <div class="DxFarilxDash__find-header-logo-block">
-                                    <svg class="DxFarilxDash__find-header-logo sc-bdVaJa fUuvxv" fill="#000000" width="22px" height="22px" viewBox="0 0 1024 1024" rotate="0"><path d="M605.4 128l-319.4 448h191.6l-59 320 319.4-448h-191.6l59-320z"></path></svg>
-                                </div>
-                                <h2 class="DxFarilxDash__find-header-title">View Single Locker</h2>
-                            </div>
-                            <div class="DxFarilxDash__lock-details">
-                                <div class="DxFarilxDash__lock-details-header">
-                                    <div class="DxFarilxDash__box-footer-link-block">
-                                        <a href="" class="DxFarilxDash__box-footer-link">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M120 256h292"></path></svg>
-                                        </a>
+                            <div class="daoxeth__details">
+                                <div class="daoxeth__details-title">Daily quota 98,280.09 USDT per address (0.00 USDT / 98,280.09 USDT)</div>
+                                <div class="DxDrop__body-box-select">
+                                    <div id="" class="custom-select-block">
+                                        <div class="custom-title">Token Type</div>
+                                        <select class="custom-select" id="" name="">
+                                            <option value="1">Airdrop Tokens</option>
+                                            <option value="2">Airdrop nan</option>
+                                        </select>
                                     </div>
-                                    <div class="DxFarilxDash__lock-details-header-title">
-                                        LP Token Locker
-                                    </div>
-                                    <div class="DxFarilxDash__box-footer-link-block">
-                                        <!-- <input id="copy__lick__lock" type="text" value="https://dxsale.app/app/v3/dxlplocksearch?id=0&add=0xCA4037256e869cc40F66555fd54c5d02A772F937&type=fair&chain=ETH"> -->
-                                        <a onclick="copy__lick__lock()" class="DxFarilxDash__box-footer-link">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><circle fill="none" cx="17.5" cy="18.5" r="1.5"></circle><circle fill="none" cx="5.5" cy="11.5" r="1.5"></circle><circle fill="none" cx="17.5" cy="5.5" r="1.5"></circle><path d="M5.5 15c.91 0 1.733-.358 2.357-.93l6.26 3.577A3.483 3.483 0 0 0 14 18.5c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5s-1.57-3.5-3.5-3.5c-.91 0-1.733.358-2.357.93l-6.26-3.577c.063-.247.103-.502.108-.768l6.151-3.515c.625.572 1.448.93 2.358.93C19.43 9 21 7.43 21 5.5S19.43 2 17.5 2S14 3.57 14 5.5c0 .296.048.578.117.853L8.433 9.602A3.496 3.496 0 0 0 5.5 8C3.57 8 2 9.57 2 11.5S3.57 15 5.5 15zm12 2c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5zm0-13c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-12 6c.827 0 1.5.673 1.5 1.5S6.327 13 5.5 13S4 12.327 4 11.5S4.673 10 5.5 10z" fill="currentColor"></path></svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="DxFarilxDash__lock-details-body">
-                                    <div class="DxFarilxDash__lock-details-body-i4">
-                                        <img src="https://www.bing.com/images/search?view=detailV2&ccid=FPYx9wmj&id=21D80D958367E7D307179D0C50B6E867F778FFB1&thid=OIP.FPYx9wmjH1XsyBeeXwzcAwAAAA&mediaurl=https%3a%2f%2fisar.unctad.org%2fwp-content%2fuploads%2f2014%2f04%2fUN-LOGO.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.14f631f709a31f55ecc8179e5f0cdc03%3frik%3dsf9492fotlAMnQ%26pid%3dImgRaw%26r%3d0&exph=260&expw=298&q=logo&simid=607990738737311702&FORM=IRPRST&ck=BE45D0D7D82BE8C253357C5D595F1EAF&selectedIndex=18" alt="" class="DxFarilxDash__lock-details-body-i4-img">
-                                        <p class="DxFarilxDash__lock-details-body-i4-title">
-                                            <strong>TST/WETH</strong>
-                                        </p>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-acti">
-                                        <button class="DxFarilxDash__lock-details-body-acti-btn btn btn--nobgr">
-                                            TST ADDRESS
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="margin-left: 5px;"><g fill="currentColor"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"></path></g></svg>
-                                        </button>
-                                        <button class="DxFarilxDash__lock-details-body-acti-btn btn btn--nobgr">
-                                            LP Token Address
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="margin-left: 5px;"><g fill="currentColor"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"></path></g></svg>
-                                        </button>
-                                        <button class="DxFarilxDash__lock-details-body-acti-btn btn btn--nobgr">
-                                            WETH ADDRESS
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="margin-left: 5px;"><g fill="currentColor"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"></path></g></svg>
-                                        </button>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-lock bsd">
-                                        <div class="DxFarilxDash__lock-details-body-lock-title"><strong>DxLaunch Certified Liquidity Locker</strong></div>
-                                        <div class="DxFarilxDash__lock-details-body-lock-box bsd">
-                                            <img src="https://cdn.iconscout.com/icon/free/png-256/lock-1851239-1569128.png" alt="" class="DxFarilxDash__lock-details-body-lock-box-img">
-                                            <div id="back__time" class="DxFarilxDash__lock-details-body-lock-box-desc"></div>
-                                        </div>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-hr"></div>
-                                    <div class="DxFarilxDash__lock-details-body-tb-block">
-                                        <table class="DxFarilxDash__lock-details-body-tb">
-                                            <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                                <th class="DxFarilxDash__lock-details-body-tb-th">Total LP Tokens</th>
-                                                <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                            </tr>
-                                            <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                                <th class="DxFarilxDash__lock-details-body-tb-th">Locked LP Tokens</th>
-                                                <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                            </tr>
-                                            <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                                <th class="DxFarilxDash__lock-details-body-tb-th">Unlock Date</th>
-                                                <td class="DxFarilxDash__lock-details-body-tb-td">30 Sep 2021 at 11:57</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-end">
-                                        <div class="DxFarilxDash__lock-details-body-end-stt">
-                                            All Locks:
-                                        </div>
-                                        <div class="DxFarilxDash__lock-details-body-end-desc">
-                                            Please be aware that only the LP Tokens are locked in the contract. Circulating tokens are not locked here and any unlocked circulating tokens can be sold at any time to withdraw the underlying liquidity! Please always do strong research before investing in any products.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="DxFarilxDash__footer bsd">
-                            <div class="DxFarilxDash__footer-div">
-                                Token Information
-                            </div>
-                            <div class="DxFarilxDash__lock-details-body-tb-block no-padding-b">
-                                <table class="DxFarilxDash__lock-details-body-tb">
-                                    <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                        <th class="DxFarilxDash__lock-details-body-tb-th">Total LP Tokens</th>
-                                        <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                    </tr>
-                                    <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                        <th class="DxFarilxDash__lock-details-body-tb-th">Locked LP Tokens</th>
-                                        <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                    </tr>
-                                </table>
+                                </div> 
+                                <div class="daoxeth__details-desc">Coming Soon V3.5</div>
                             </div>
                         </div>
                     </div>
@@ -438,24 +312,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="../js/index.js"></script>
 <script src="../js/DxFariLauch__Dash.js"></script>
-<script>
-    function checkTime(i) {
-        if (i < 10) {i = "0" + i}; 
-        return i;
-    }
-    function startTime() {
-        const today = new Date();
-        let d = today.getDate();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-        m = checkTime(m);
-        s = checkTime(s);
-        var show__time = document.getElementById('back__time');
-        var time = `${d}:${h}:${m}:${s}`;
-        show__time.innerHTML = time;
-        setTimeout(startTime, 1000);
-    }
-    startTime();
-</script>
+<script src="../js/DxMint.js"></script>
 </html>
