@@ -47,7 +47,7 @@ function compact() {
     var nav__scroll = document.getElementById('nav__scroll');
     var body = document.getElementById('home__content');
 
-    if (check.checked == 0) {
+    if (check.checked == true) {
         element.classList.add('compact');
         body.classList.add('compact');
         for (let index = 1; index <= s.length; index++) {
@@ -86,7 +86,6 @@ $(document).ready(function () {
 // select
 
 $('select').each(function () {
-
     // Cache the number of options
     var $this = $(this),
         numberOfOptions = $(this).children('option').length;

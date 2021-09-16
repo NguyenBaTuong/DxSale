@@ -76,3 +76,39 @@
     font-size: 1.3rem;
     line-height: 4rem;
 }
+
+
+
+@media screen and (max-width: 64em){
+    
+
+}
+
+@media screen and (max-width: 63.938em) {
+    .DxFarilxDash__box-modal--dxf__tb {
+        margin: 0 70px;
+    }
+
+    .DxFarilxDash__start-root {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 46.250em) and (max-width: 63.938em){
+    
+
+}
+
+@media screen and (max-width: 46.188em) {
+   .DxFarilxStart {
+       padding: 0 10px;
+   }
+
+   .home__content-body--dxf-start {
+       margin-top: 30px;
+   }
+
+   .DxFarilxDash__box-modal--dxf__tb {
+        margin: 0 30px;
+    }
+}

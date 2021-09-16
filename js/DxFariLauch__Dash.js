@@ -42,6 +42,7 @@ function modal__ac() {
     var modal__note__body = document.getElementById('modal__note__body');
     var dxdash__first = document.getElementById('dxdash__first');
     var dxdash__second =  document.getElementById('dxdash__second');
+    var dxdash__first__active = document.getElementById('dxdash__first__active');
 
     if (modal__box.checked == 0) {
         modal__note.style.display =  'flex';
@@ -49,6 +50,7 @@ function modal__ac() {
         modal__note__body.style.display ='block';
         dxdash__first.style.display = 'none';
         dxdash__second.style.display = 'block';
+        dxdash__first__active.style.display = 'none';
 
     } else {
         modal__note.style.display =  'none';

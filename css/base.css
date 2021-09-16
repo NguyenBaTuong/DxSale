@@ -98,6 +98,22 @@ body {
     animation: growth linear 0.1s;
 }
 
+.modal__body--mr {
+    margin: 20px auto 0;
+}
+
+.modal__body.modal__body--left {
+    --growth-form: 0.7;
+    --growth-to: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    z-index: 4;
+    animation: growth linear 0.1s;
+    background-color: var(--white__color);
+}
+
 .no-mb {
     margin-bottom: 0;
 }
@@ -115,12 +131,24 @@ body {
     align-items: center;
 }
 
+.btn--green {
+    color: var(--white__color);
+    background-color: #00BFA5;
+}
+
+.btn--green:hover {
+    color: var(--white__color);
+    background-color: #00796b;
+}
+
 .btn--blue {
-    color: #2196F3;
+    color: var(--white__color);
+    background-color: #2196F3;
 }
 
 .btn--blue:hover {
-    color: #2196F3;
+    color: var(--white__color);
+    background-color: #1565c0;
 }
 
 .btn:focus {
@@ -159,6 +187,7 @@ body {
 .btn--nobgr i {
     margin-left: 5px;
 }
+
 
 .bsd {
     background-color: #FFFFFF;
@@ -624,6 +653,18 @@ body {
     }
 }
 
+@keyframes widthSlider {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+
+    to {
+        opacity: 1;
+        width: 240px;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -673,7 +714,8 @@ body {
 }
 
 .bgr--green {
-    background-color: #00BFA5;
+    /* background-color: #00BFA5; */
+    background-color: #03af76;
     color: #FFFFFF;
 }
 
@@ -689,6 +731,7 @@ body {
 
 .dao-bgr--blu {
     background-color: rgb(89, 138, 238);
+    /* background-color: #598aee; */
     color: #FFFFFF;
 }
 
@@ -716,8 +759,7 @@ body {
 }
 
 .bgr--blu {
-    /* background-color: #598aee; */
-    background-color: #2196F3;
+    background-color: #598aee;
     color: #FFFFFF;
 }
 
@@ -761,14 +803,23 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
+    background-color: var(--white__color);
+}
+
+.home__nav-block-pc {
     width: 240px;
+    height: 100%;
 }
 
-.home__nav-block.compact {
-    width: 60px;
+.home__content {
+    flex: 1;
 }
 
-.home__nav-block.compact:hover {
+.home__nav-block.compact .home__nav-block-pc{
+    width: 60px ;
+}
+
+.home__nav-block.compact:hover .home__nav-block-pc{
     width: 240px;
 }
 
@@ -830,6 +881,10 @@ body {
     animation: fadeIn 0.3s linear;
 }
 
+.home__nav-control.home__nav-control--modal {
+    display: none;
+}
+
 .home__nav {
     background-color: #FFFFFF;
     width: 100%;
@@ -860,7 +915,7 @@ body {
 }
 
 .home__nav-list {
-    padding: 16px 12px 40px 0;
+    padding: 70px 12px 40px 0;
     position: relative;
     height: 100vh;
     overflow-y: scroll;
@@ -885,6 +940,16 @@ body {
     margin: 8px 0;
     position: relative;
     list-style: none;
+}
+
+.home__nav-item-bl {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 48px;
+    content: "";
+    position: absolute;
+    background: rgba(33, 150, 243, 0.5);
 }
 
 .home__nav-item-title {
@@ -956,7 +1021,7 @@ body {
     line-height: 3.6rem;
     border-radius: 0 24px 24px 0;
     height: 36px;
-    padding: 0 16px 0 80px;
+    padding: 0 16px 0 56px;
 }
 
 .home__nav-son-item-link:hover {
@@ -971,6 +1036,7 @@ body {
     height: 84px;
     border-top: 1px solid #E0E0E0;
     margin-top: 20px;
+    flex: 1;
 }
 
 .home__content-footer-logo-block {
@@ -991,6 +1057,7 @@ body {
 .home__content-footer-desc-text {
     color: var(--black__color);
     display: block;
+    font-size: 1.28rem;
 }
 
 
@@ -1008,12 +1075,24 @@ body {
     width: 100%;
 }
 
-.home__content-header-zoom {}
+/* .home__content-header-zoom {} */
 
 .home__content-header-acti {
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    position: relative;
+}
+
+.home__content-header-acti::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    width: 1px;
+    height: 40%;
+    background-color: #67b1ed;
 }
 
 .home__content-header-acti-btn {
@@ -1042,7 +1121,7 @@ body {
 }
 
 .home__content-header-acti-detail {
-    font-size: 1.2rem;
+    font-size: 1.224rem;
     margin-left: 10px;
     height: 44px;
     display: flex;
@@ -1067,10 +1146,23 @@ body {
     border-radius: 50px;
     color: #FFFFFF;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     font-weight: 600;
 }
 
 .home__content-header-acti-control:hover {
     background-color: #00796B;
+}
+
+
+@media screen and (min-width: 46.250em) and (max-width: 63.938em){
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 46.188em) {
+    .mobile {
+        display: block;
+    }
 }

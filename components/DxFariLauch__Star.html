@@ -17,184 +17,373 @@
         <div id="home" class="home">
             <input type="checkbox" name="" id="slider" class="control__slider" hidden>
             <div id="sliderxbox" class="home__nav-block">
-                <label id="control__label" onclick="compact()" for="slider" class="home__nav-control">
-                    <i class="fas fa-bars home__nav-control-icon"></i>
-                </label>
-                <div id="nav__scroll" class="home__nav">
-                    <a href="../index.html" id="home__nav__i4" class="home__nav-i4">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgb3BhY2l0eTogMC45OTk7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMTExcHg7CiAgICAgICAgZm9udC1mYW1pbHk6IEJhaG5zY2hyaWZ0OwogICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsdGVyOiB1cmwoI1JlY3RhbmdsZV8xKTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxmaWx0ZXIgaWQ9IlJlY3RhbmdsZV8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGZlT2Zmc2V0IGR4PSIzIiBkeT0iMyIgaW5wdXQ9IlNvdXJjZUFscGhhIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjUiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwLjE2MSIvPgogICAgICA8ZmVDb21wb3NpdGUgb3BlcmF0b3I9ImluIiBpbjI9ImJsdXIiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMiIGRhdGEtbmFtZT0iR3JvdXAgMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSA0KSI+CiAgICA8ZyBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC01LCAtNCkiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgcng9IjQ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjcuNDQyIDY4LjY1MikiPgogICAgICA8dGV4dCBpZD0iRHgiIGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuNTU4IDExNy4zNDgpIj48dHNwYW4geD0iLTU1LjQ0NiIgeT0iMCI+RHg8L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" class="home__nav-i4-logo">
-                        <span class="home__nav-i4-name">Version 3.0</span>
-                    </a>
-                    <ul class="home__nav-list">
-                        <li onclick="return ope(this)" id="td1" class="home__nav-item">
-                            <a class="home__nav-item-link">
-                                <i id="log1" class="home__nav-item-icon fas fa-home"></i> 
-                                <span id="name1" class="home__nav-item-name">Home</span>
-                            </a>
-                        </li>
-                        <li onclick="return ope(this)" id="td2" class="home__nav-item">
-                            <a href="" class="home__nav-item-link">
-                                <i id="log2" class="home__nav-item-icon fab fa-btc"></i> 
-                                <span id="name2" class="home__nav-item-name">DxMint</span>
-                            </a>
-                        </li>
-                        <li onclick="return ope(this)" id="td3" class="home__nav-item">
-                            <a href="" class="home__nav-item-link">
-                                <i class="home__nav-item-icon fas fa-tint"></i>  
-                                <span id="name3" class="home__nav-item-name">DxDrop</span>
-                            </a>
-                        </li>
-                        <li onclick="return ope(this)" id="td4" class="home__nav-item expanded">
-                            <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc">
-                                    <i class="home__nav-item-icon fas fa-fighter-jet"></i> 
-                                    <span id="name4" class="home__nav-item-name">DxLaunch</span>                                   
-                                </span> 
-                                <span id="stt1" class="home__nav-item-title-icon">
-                                    <i id="td4_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
-                                    <i id="td4_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
-                                </span>
+                <div class="home__nav-block-pc">
+                    <label id="control__label" onclick="compact()" for="slider" class="home__nav-control">
+                        <i class="fas fa-bars home__nav-control-icon"></i>
+                    </label>
+                    <div id="nav__scroll" class="home__nav">
+                        <a href="./index.html" id="home__nav__i4" class="home__nav-i4">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgb3BhY2l0eTogMC45OTk7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMTExcHg7CiAgICAgICAgZm9udC1mYW1pbHk6IEJhaG5zY2hyaWZ0OwogICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsdGVyOiB1cmwoI1JlY3RhbmdsZV8xKTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxmaWx0ZXIgaWQ9IlJlY3RhbmdsZV8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGZlT2Zmc2V0IGR4PSIzIiBkeT0iMyIgaW5wdXQ9IlNvdXJjZUFscGhhIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjUiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwLjE2MSIvPgogICAgICA8ZmVDb21wb3NpdGUgb3BlcmF0b3I9ImluIiBpbjI9ImJsdXIiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMiIGRhdGEtbmFtZT0iR3JvdXAgMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSA0KSI+CiAgICA8ZyBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC01LCAtNCkiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgcng9IjQ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjcuNDQyIDY4LjY1MikiPgogICAgICA8dGV4dCBpZD0iRHgiIGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuNTU4IDExNy4zNDgpIj48dHNwYW4geD0iLTU1LjQ0NiIgeT0iMCI+RHg8L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" class="home__nav-i4-logo">
+                            <span class="home__nav-i4-name">Version 3.0</span>
+                        </a>
+                        <ul class="home__nav-list">
+                            <li onclick="return ope(this)" id="td1" class="home__nav-item">
+                                <a href="./index.html" class="home__nav-item-link">
+                                    <i class="home__nav-item-icon fas fa-home"></i> 
+                                    <span id="name1" class="home__nav-item-name">Home</span>
+                                </a>
+                            </li>
+                            <li onclick="return ope(this)" id="td2" class="home__nav-item">
+                                <a href="./components/DxMint.html" class="home__nav-item-link">
+                                    <i class="home__nav-item-icon fab fa-btc"></i> 
+                                    <span id="name2" class="home__nav-item-name">DxMint</span>
+                                </a>
+                            </li>
+                            <li onclick="return ope(this)" id="td3" class="home__nav-item">
+                                <a href="" class="home__nav-item-link">
+                                    <i class="home__nav-item-icon fas fa-tint"></i>  
+                                    <span id="name3" class="home__nav-item-name">DxDrop</span>
+                                </a>
+                            </li>
+                            <li onclick="return ope(this)" id="td4" class="home__nav-item expanded">
+                                <div class="home__nav-item-title">
+                                    <span class="home__nav-item-title-desc">
+                                        <i class="home__nav-item-icon fas fa-fighter-jet"></i> 
+                                        <span id="name4" class="home__nav-item-name">DxLaunch</span>                                   
+                                    </span> 
+                                    <span id="stt1" class="home__nav-item-title-icon">
+                                        <i id="td4_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                        <i id="td4_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <ul id="td4_son" class="home__nav-son none">
+                                    <li class="home__nav-son-item-title">Launchpad</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">Dashboard</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">Start or Manage</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li onclick="return ope(this)" id="td5" class="home__nav-item expanded">
+                                <div class="home__nav-item-title">
+                                    <span class="home__nav-item-title-desc">
+                                        <i class="home__nav-item-icon fas fa-bolt"></i> 
+                                        <span id="name5" class="home__nav-item-name">DxFairLaunch</span>
+                                    </span> 
+                                    <span  id="stt2" class="home__nav-item-title-icon">
+                                        <i id="td5_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                        <i id="td5_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <ul id="td5_son" class="home__nav-son none">
+                                    <li class="home__nav-son-item-title">Launchpad</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="./components/DxFariLauch__Dashboard.html" class="home__nav-son-item-link">Dashboard</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="./components/DxFariLauch__Star.html" class="home__nav-son-item-link">Start or Manage</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li onclick="return ope(this)" id="td6" class="home__nav-item expanded">
+                                <div class="home__nav-item-title">
+                                    <span class="home__nav-item-title-desc">
+                                        <i class="home__nav-item-icon fas fa-lock-alt"></i> 
+                                        <span id="name6" class="home__nav-item-name">DxLock</span> 
+                                    </span> 
+                                    <span  id="stt3" class="home__nav-item-title-icon">
+                                        <i id="td6_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                        <i id="td6_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <ul id="td6_son" class="home__nav-son none">
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">View Lockers</a>
+                                    </li>
+                                    <li class="home__nav-son-item-title">Lock or Manage Assets</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">Lock LP Tokens</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">Lock Tokens</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li onclick="return ope(this)" id="td7" class="home__nav-item expanded">
+                                <div class="home__nav-item-title">
+                                    <span class="home__nav-item-title-desc">
+                                        <i class="home__nav-item-icon fas fa-fingerprint"></i> 
+                                        <span id="name7" class="home__nav-item-name">Sercurity</span>
+                                    </span> 
+                                    <span id="stt4" class="home__nav-item-title-icon">
+                                        <i id="td7_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                        <i id="td7_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <ul id="td7_son" class="home__nav-son none">
+                                    <li class="home__nav-son-item-title">Partner Portals</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">Audit</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">KYC</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li onclick="return ope(this)" id="td8" class="home__nav-item expanded">
+                                <div class="home__nav-item-title">
+                                    <span class="home__nav-item-title-desc">
+                                        <i class="home__nav-item-icon fas fa-key-skeleton"></i> 
+                                        <span id="name8" class="home__nav-item-name">DxSale DAO</span>
+                                    </span> 
+                                    <span id="stt5" class="home__nav-item-title-icon">
+                                        <i id="td8_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                        <i id="td8_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <ul id="td8_son" class="home__nav-son none">
+                                    <li class="home__nav-son-item-title">SALE Token Tools</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">Fee Management</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">ETH BSC Bridge</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li onclick="return ope(this)" id="td9" class="home__nav-item expanded">
+                                <div class="home__nav-item-title">
+                                    <span class="home__nav-item-title-desc">
+                                        <i class="home__nav-item-icon fas fa-folder"></i> 
+                                        <span id="name9" class="home__nav-item-name">Archives</span> 
+                                    </span> 
+                                    <span id="stt6" class="home__nav-item-title-icon">
+                                        <i id="td9_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                        <i id="td9_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <ul id="td9_son" class="home__nav-son none">
+                                    <li class="home__nav-son-item-title">V2.9</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLock</a>
+                                    </li>
+                                    <li class="home__nav-son-item-title">V2.5</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLock</a>
+                                    </li>
+                                    <li class="home__nav-son-item-title">V1 DEFI</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLock</a>
+                                    </li>
+                                    <li class="home__nav-son-item-title">V1 Standard</li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                    </li>
+                                    <li class="home__nav-son-item">
+                                        <a href="" class="home__nav-son-item-link">DxStake</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home__nav-block-mb">
+                    <input type="checkbox" name="" id="slider__modal" class="slider__modal" hidden>
+                    <label for="slider__modal" class="home__nav-control home__nav-control--modal">
+                        <i class="fas fa-bars home__nav-control-icon"></i>
+                    </label>
+                    <div class="modal">
+                        <label for="slider__modal" class="modal__overlay slider__modal__overlay"></label>
+                        <div class="modal__body modal__body--left">
+                            <div class="home__nav home__nav-overlay">
+                                <a href="./index.html" id="home__nav__i4__modal" class="home__nav-i4">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgb3BhY2l0eTogMC45OTk7CiAgICAgICAgaXNvbGF0aW9uOiBpc29sYXRlOwogICAgICB9CgogICAgICAuY2xzLTMgewogICAgICAgIGZvbnQtc2l6ZTogMTExcHg7CiAgICAgICAgZm9udC1mYW1pbHk6IEJhaG5zY2hyaWZ0OwogICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICAgIH0KCiAgICAgIC5jbHMtNCB7CiAgICAgICAgZmlsdGVyOiB1cmwoI1JlY3RhbmdsZV8xKTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxmaWx0ZXIgaWQ9IlJlY3RhbmdsZV8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGZlT2Zmc2V0IGR4PSIzIiBkeT0iMyIgaW5wdXQ9IlNvdXJjZUFscGhhIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjUiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwLjE2MSIvPgogICAgICA8ZmVDb21wb3NpdGUgb3BlcmF0b3I9ImluIiBpbjI9ImJsdXIiLz4KICAgICAgPGZlQ29tcG9zaXRlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMiIGRhdGEtbmFtZT0iR3JvdXAgMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNSA0KSI+CiAgICA8ZyBjbGFzcz0iY2xzLTQiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC01LCAtNCkiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgcng9IjQ0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMiAxMikiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJHcm91cF8xIiBkYXRhLW5hbWU9Ikdyb3VwIDEiIGNsYXNzPSJjbHMtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjcuNDQyIDY4LjY1MikiPgogICAgICA8dGV4dCBpZD0iRHgiIGNsYXNzPSJjbHMtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuNTU4IDExNy4zNDgpIj48dHNwYW4geD0iLTU1LjQ0NiIgeT0iMCI+RHg8L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" class="home__nav-i4-logo">
+                                    <span class="home__nav-i4-name">Version 3.0</span>
+                                </a>
+                                <ul class="home__nav-list">
+                                    <li onclick="return ope(this)" id="td10" class="home__nav-item">
+                                        <a href="./index.html" class="home__nav-item-link">
+                                            <i class="home__nav-item-icon fas fa-home"></i> 
+                                            <span id="name10" class="home__nav-item-name">Home</span>
+                                        </a>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td11" class="home__nav-item">
+                                        <a href="./components/DxMint.html" class="home__nav-item-link">
+                                            <i class="home__nav-item-icon fab fa-btc"></i> 
+                                            <span id="name11" class="home__nav-item-name">DxMint</span>
+                                        </a>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td12" class="home__nav-item">
+                                        <a href="" class="home__nav-item-link">
+                                            <i class="home__nav-item-icon fas fa-tint"></i>  
+                                            <span id="name12" class="home__nav-item-name">DxDrop</span>
+                                        </a>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td13" class="home__nav-item expanded">
+                                        <div class="home__nav-item-title">
+                                            <span class="home__nav-item-title-desc">
+                                                <i class="home__nav-item-icon fas fa-fighter-jet"></i> 
+                                                <span id="name13" class="home__nav-item-name">DxLaunch</span>                                   
+                                            </span> 
+                                            <span id="stt7" class="home__nav-item-title-icon">
+                                                <i id="td13_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                                <i id="td13_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="td13_son" class="home__nav-son none">
+                                            <li class="home__nav-son-item-title">Launchpad</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">Dashboard</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">Start or Manage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td14" class="home__nav-item expanded">
+                                        <div class="home__nav-item-title">
+                                            <span class="home__nav-item-title-desc">
+                                                <i class="home__nav-item-icon fas fa-bolt"></i> 
+                                                <span id="name14" class="home__nav-item-name">DxFairLaunch</span>
+                                            </span> 
+                                            <span  id="stt8" class="home__nav-item-title-icon">
+                                                <i id="td14_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                                <i id="td14_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="td14_son" class="home__nav-son none">
+                                            <li class="home__nav-son-item-title">Launchpad</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="./components/DxFariLauch__Dashboard.html" class="home__nav-son-item-link">Dashboard</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="./components/DxFariLauch__Star.html" class="home__nav-son-item-link">Start or Manage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td15" class="home__nav-item expanded">
+                                        <div class="home__nav-item-title">
+                                            <span class="home__nav-item-title-desc">
+                                                <i class="home__nav-item-icon fas fa-lock-alt"></i> 
+                                                <span id="name15" class="home__nav-item-name">DxLock</span> 
+                                            </span> 
+                                            <span  id="stt9" class="home__nav-item-title-icon">
+                                                <i id="td15_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                                <i id="td15_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="td15_son" class="home__nav-son none">
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">View Lockers</a>
+                                            </li>
+                                            <li class="home__nav-son-item-title">Lock or Manage Assets</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">Lock LP Tokens</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">Lock Tokens</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td16" class="home__nav-item expanded">
+                                        <div class="home__nav-item-title">
+                                            <span class="home__nav-item-title-desc">
+                                                <i class="home__nav-item-icon fas fa-fingerprint"></i> 
+                                                <span id="name16" class="home__nav-item-name">Sercurity</span>
+                                            </span> 
+                                            <span id="stt10" class="home__nav-item-title-icon">
+                                                <i id="td16_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                                <i id="td16_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="td16_son" class="home__nav-son none">
+                                            <li class="home__nav-son-item-title">Partner Portals</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">Audit</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">KYC</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td17" class="home__nav-item expanded">
+                                        <div class="home__nav-item-title">
+                                            <span class="home__nav-item-title-desc">
+                                                <i class="home__nav-item-icon fas fa-key-skeleton"></i> 
+                                                <span id="name17" class="home__nav-item-name">DxSale DAO</span>
+                                            </span> 
+                                            <span id="stt11" class="home__nav-item-title-icon">
+                                                <i id="td17_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                                <i id="td17_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="td17_son" class="home__nav-son none">
+                                            <li class="home__nav-son-item-title">SALE Token Tools</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">Fee Management</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">ETH BSC Bridge</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li onclick="return ope(this)" id="td18" class="home__nav-item expanded">
+                                        <div class="home__nav-item-title">
+                                            <span class="home__nav-item-title-desc">
+                                                <i class="home__nav-item-icon fas fa-folder"></i> 
+                                                <span id="name18" class="home__nav-item-name">Archives</span> 
+                                            </span> 
+                                            <span id="stt12" class="home__nav-item-title-icon">
+                                                <i id="td18_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
+                                                <i id="td18_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="td18_son" class="home__nav-son none">
+                                            <li class="home__nav-son-item-title">V2.9</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLock</a>
+                                            </li>
+                                            <li class="home__nav-son-item-title">V2.5</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLock</a>
+                                            </li>
+                                            <li class="home__nav-son-item-title">V1 DEFI</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLock</a>
+                                            </li>
+                                            <li class="home__nav-son-item-title">V1 Standard</li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxLaunch</a>
+                                            </li>
+                                            <li class="home__nav-son-item">
+                                                <a href="" class="home__nav-son-item-link">DxStake</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul id="td4_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Launchpad</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Dashboard</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Start or Manage</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li onclick="return ope(this)" id="td5" class="home__nav-item expanded">
-                            <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc">
-                                    <i class="home__nav-item-icon fas fa-bolt"></i> 
-                                    <span id="name5" class="home__nav-item-name">DxFairLaunch</span>
-                                </span> 
-                                <span  id="stt2" class="home__nav-item-title-icon">
-                                    <i id="td5_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
-                                    <i id="td5_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <ul id="td5_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Launchpad</li>
-                                <li class="home__nav-son-item">
-                                    <a href="../components/DxFariLauch__Dashboard.html" class="home__nav-son-item-link">Dashboard</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="../components/DxFariLauch__Star.html" class="home__nav-son-item-link">Start or Manage</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li onclick="return ope(this)" id="td6" class="home__nav-item expanded">
-                            <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc">
-                                    <i class="home__nav-item-icon fas fa-lock-alt"></i> 
-                                    <span id="name6" class="home__nav-item-name">DxLock</span> 
-                                </span> 
-                                <span  id="stt3" class="home__nav-item-title-icon">
-                                    <i id="td6_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
-                                    <i id="td6_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <ul id="td6_son" class="home__nav-son none">
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">View Lockers</a>
-                                </li>
-                                <li class="home__nav-son-item-title">Lock or Manage Assets</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Lock LP Tokens</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Lock Tokens</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li onclick="return ope(this)" id="td7" class="home__nav-item expanded">
-                            <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc">
-                                    <i class="home__nav-item-icon fas fa-fingerprint"></i> 
-                                    <span id="name7" class="home__nav-item-name">Sercurity</span>
-                                </span> 
-                                <span id="stt4" class="home__nav-item-title-icon">
-                                    <i id="td7_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
-                                    <i id="td7_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <ul id="td7_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">Partner Portals</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Audit</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">KYC</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li onclick="return ope(this)" id="td8" class="home__nav-item expanded">
-                            <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc">
-                                    <i class="home__nav-item-icon fas fa-key-skeleton"></i> 
-                                    <span id="name8" class="home__nav-item-name">DxSale DAO</span>
-                                </span> 
-                                <span id="stt5" class="home__nav-item-title-icon">
-                                    <i id="td8_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
-                                    <i id="td8_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <ul id="td8_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">SALE Token Tools</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">Fee Management</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">ETH BSC Bridge</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li onclick="return ope(this)" id="td9" class="home__nav-item expanded">
-                            <div class="home__nav-item-title">
-                                <span class="home__nav-item-title-desc">
-                                    <i class="home__nav-item-icon fas fa-folder"></i> 
-                                    <span id="name9" class="home__nav-item-name">Archives</span> 
-                                </span> 
-                                <span id="stt6" class="home__nav-item-title-icon">
-                                    <i id="td9_up" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--up fas fa-chevron-up none"></i> 
-                                    <i id="td9_down" class="home__nav-item-title-icon-item home__nav-item-title-icon-item--down fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <ul id="td9_son" class="home__nav-son none">
-                                <li class="home__nav-son-item-title">V2.9</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLock</a>
-                                </li>
-                                <li class="home__nav-son-item-title">V2.5</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLock</a>
-                                </li>
-                                <li class="home__nav-son-item-title">V1 DEFI</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLock</a>
-                                </li>
-                                <li class="home__nav-son-item-title">V1 Standard</li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxLaunch</a>
-                                </li>
-                                <li class="home__nav-son-item">
-                                    <a href="" class="home__nav-son-item-link">DxStake</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="home__content" class="home__content">
@@ -227,7 +416,7 @@
                 </div>
 
                 <!-- content page  -->
-                <div class="home__content-body">
+                <div class="home__content-body home__content-body--dxf-start">
                     <div class="DxFarilxStart">
                         <input type="checkbox" name="" id="modal__dxf__start__input" class="modal__dxf__start__input" hidden>
                         <div id="dxf__start__first" class="DxFarilxStart__open bsd">
@@ -238,9 +427,9 @@
                             </label>    
                         </div>
                         <div id="modal__dxf__start__note" class="modal">
-                            <label onclick="dxf__Start__modal()" id="modal__dxf__start__note__overlay" for="modal__dxf__start__input" class="modal__overlay"></label>
-                            <div id="modal__dxf__start__note__body" class="modal__body">
-                                <div id="modal__dxf__start__note__content" class="DxFarilxDash__box-modal">
+                            <label onclick="dxf__Start__modal()" id="modal__dxf__start__note__overlay" for="modal__dxf__start__input" class="modal__overlay dxf__overlay"></label>
+                            <div id="modal__dxf__start__note__body" class="modal__body modal__body--mr">
+                                <div id="modal__dxf__start__note__content" class="DxFarilxDash__box-modal DxFarilxDash__box-modal--dxf__tb">
                                     <div class="DxFarilxDash__box-modal-header">
                                         Disclaimer
                                     </div>
@@ -321,10 +510,10 @@
                         <div id="dxf__start__second" class="DxFarilxStart__details">
                             <div class="DxFarilxStart__details-active">
                                 <div class="DxFarilxDash__active flex-column bsd">
-                                    <button class="DxFarilxDash__active-btn mb btn bgr--blu">Connect Wallet to Start</button>
+                                    <button class="DxFarilxDash__active-btn mb btn btn--blue">Connect Wallet to Start</button>
                                     <div class="DxFarilxDash__active-btn-block">
                                         <input type="checkbox" name="" id="dxf__start__id__qr" class="dxf__start__id__qr" hidden>
-                                        <label for="dxf__start__id__qr" class="DxFarilxDash__active-btn btn bgr--green">
+                                        <label for="dxf__start__id__qr" class="DxFarilxDash__active-btn btn btn--green">
                                             Walletconnect                                
                                         </label>
                                         <div class="modal">
