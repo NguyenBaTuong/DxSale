@@ -587,6 +587,63 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
     color: red;
 }
 
+.DxFarilxDash__box-left-item-i4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DxFarilxDash__box-left-item-i4-img {
+    height: 50px;
+    width: 50px;
+}
+
+.DxFarilxDash__box-left-item-i4-title {
+    font-size: 1.76rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.DxFarilxDash__box-left-item-i4-desc {
+    font-size: 1.28;
+    font-weight: bold;
+}
+
+.DxFarilxDash__box-left-item-noti {
+
+}
+
+.DxFarilxDash__box-left-item-noti-title {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.DxFarilxDash__box-left-item-noti-list {
+    color: red;
+}
+
+.DxFarilxDash__box-left-item-noti-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.DxFarilxDash__box-left-item-noti-item-icon {
+    margin-right: 10px;
+}
+
+.DxFarilxDash__box-left-item-btn-block {
+    display: flex;
+    justify-content: center;
+}
+
+.DxFarilxDash__box-left-item-note {
+    color: red;
+    font-size: 1.08rem;
+    margin-top: 10px;
+}
+
 .DxFarilxDash__box-bet-block {
     padding: 20px;
 }
@@ -652,7 +709,7 @@ h2.DxFairlxDash__box-bet-item.blu-hot-h2 {
     height: 47px;
 }
 
-.DxFairlxDash__box-bet-item-btn:hover {
+.DxFairlxDash__box-bet-item-btn.DxFairlxDash__box-bet-item-btn-diss:hover {
     box-shadow: 0px 2px 4px -1px rgb(80 80 80 / 20%), 0px 4px 5px 0px rgb(80 80 80 / 14%), 0px 1px 10px 0px rgb(80 80 80 / 12%);
     background-color: #d5d5d5;
 }
@@ -908,6 +965,7 @@ tr.DxFairlxDash__box-bet-tr {
 .DxFarilxDash__find-header-title {
     font-weight: 400;
 }
+
 
 
 @media screen and (max-width: 64em){
