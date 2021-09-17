@@ -2,7 +2,9 @@
 .daoxfee__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0 80px;
 }
 
 .daoxfee__list-item {
@@ -10,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 185px;
+    flex-basis: 14%;
     height: 80px;
     border-radius: 8px;
 }
@@ -115,7 +117,7 @@
 }
 
 .daoxeth__details {
-
+    padding-bottom: 200px;
 }
 
 .daoxeth__details-title {
@@ -129,4 +131,54 @@
     font-size: 1.6rem;
     margin: 20px 0;
     text-align: center;
+}
+
+
+.DxFarilxDash__active.DxFarilxDash__active--mb {
+    display: none;
+}
+
+
+@media screen and (max-width: 64em){
+    .daoxfee__list-item {
+        /* width: 120px; */
+    }
+}
+
+@media screen and (max-width: 63.938em) {
+    .daoxfee__list {
+        padding: 0 100px;
+    }
+
+    .daoxfee__list-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .daoxfee__details-form-group {
+        flex-basis: 90%;
+    }
+}
+
+@media screen and (min-width: 46.250em) and (max-width: 63.938em){
+
+}
+
+@media screen and (max-width: 46.188em) {
+    .DxFarilxDash__active.DxFarilxDash__active--pc {
+        display: none;
+    }
+
+    .DxFarilxDash__active.DxFarilxDash__active--mb {
+        display: flex;
+        padding: 5px 0;
+    }     
+
+    .daoxfee__list {
+        padding: 0 60px;
+    }
+    
+    .daoxeth-block {
+        padding: 0 20px;
+    }
 }
