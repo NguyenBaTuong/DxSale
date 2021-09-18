@@ -420,7 +420,7 @@
                     <input type="checkbox" name="" id="modal__box" class="modal__box" hidden>
                     <div class="DxFarilxDash__public">
                         <div id="dxdash__first__active" class="DxFarilxDash__active flex-column bsd">
-                            <button class="DxFarilxDash__active-btn mb btn btn--blue">Connect Wallet to Start</button>
+                            <button class="DxFarilxDash__active-btn btn mb btn--blue">Connect Wallet to Start</button>
                             <div id="dxdash__first__active__btn" class="DxFarilxDash__active-btn-block">
                                 <input type="checkbox" name="" id="id__qr" class="id__qr" hidden>
                                 <label for="id__qr" class="DxFarilxDash__active-btn btn btn--green">
@@ -458,158 +458,311 @@
                             </div>   
                         </div>
                     </div>
-<!--                    
-                    <div id="modal__note" class="modal">
-                        <label onclick="modal__ac()" id="modal__note__overlay" for="modal__box" class="modal__overlay"></label>
-                        <div id="modal__note__body" class="modal__body">
-                            <div id="modal__note__content" class="DxFarilxDash__box-modal DxFarilxDash__box-modal--w">
-                                <div class="DxFarilxDash__box-modal-header">
-                                    Disclaimer
+                    <div id="dxdash__first" class="DxFarilxDash">                   
+                        <div class="DxFarilxDash__find bsd">
+                            <div class="DxFarilxDash__find-header">
+                                <div class="DxFarilxDash__find-header-avt">
+                                    <img class="DxFarilxDash__find-header-avt-img" src="https://dxsale.network/assets/img/dx-logos/dx-lock.png" alt="">
                                 </div>
-                                <div class="DxFarilxDash__box-modal-body">
-                                    <p class="DxFarilxDash__box-modal-body-desc">
-                                        DxSale is a decentralized software tool. Anyone can create a fair launch using their own token.
-                                        <br><br>
-                                        Tokens can be clones and can have the same name as existing coins. Token creators can pretend to be owners of the real project. Please use provided social links to research and examine every project to avoid scams.
-                                        <br><br>
-                                        In the fair launch zone project owners can load arbitrary token contracts. Please take extra caution and do your research when interacting with arbitrary tokens.
-                                        <br><br>
-                                        Please pay close attention to all token metrics shared on the SALE's page.
-                                        <br><br>
-                                        <a class="DxFarilxDash__box-modal-body-desc-link" href="https://dxsale.app/app/termsandconditions" target="_blank">Terms and Conditions</a>
-                                        <br><br>
-                                    </p>
-                                    <div class="DxFarilxDash__box-modal-body-root">
-                                        <input onclick="check__ac()" type="checkbox" id="root__check" class="DxFarilxDash__box-modal-body-root-input">
-                                        <label onclick="check__ac()" for="root__check" class="DxFarilxDash__box-modal-body-root-desc">
-                                            I have read and agree to the Terms and Conditions and I understand that I am responsible for doing my own research!
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="DxFarilxDash__box-modal-footer">
-                                    <div class="DxFarilxDash__box-modal-footer-btn-block">
-                                        <label onclick="modal__ac()" for="modal__box" class="DxFarilxDash__box-modal-footer-btn btn btn--diss">cancel</label>
-                                    </div>
-                                    <div class="DxFarilxDash__box-modal-footer-btn-block">
-                                        <btn onclick="modal__second()" id="btn__active" class="DxFarilxDash__box-modal-footer-btn btn btn--diss">confirm</btn>
-                                    </div>
-                                </div>
+                                <h2 class="DxFarilxDash__find-header-title DxFarilxDash__find-header-title--flex1">View All Lockers in DxLock</h2>
                             </div>
-                        </div>
-                    </div>
-                    <div id="dxdash__second" class="DxFarilxDash__open bsd">
-                        <div class="DxFarilxDash__open-title">Disclaimer not accepted. Please accept the disclaimer to continue!</div>
-                        <br> <br>
-                        <label onclick="modal__ac()" for="modal__box">
-                            <span class="DxFarilxDash__open__btn btn bgr--blu">OPEN DISCLAIMER</span>
-                        </label>
-                    </div> -->
-                    
-                    <!-- style="display: block;" id="dxdash__fourth"   -->
-                    <div class="DxFarilxDash__lock-block bsd">
-                        <div class="DxFarilxDash__lock bsd">
-                            <div Single Lockerdiv class="DxFarilxDash__find-header">
-                                <div class="DxFarilxDash__find-header-logo-block">
-                                    <svg class="DxFarilxDash__find-header-logo sc-bdVaJa fUuvxv" fill="#000000" width="22px" height="22px" viewBox="0 0 1024 1024" rotate="0"><path d="M605.4 128l-319.4 448h191.6l-59 320 319.4-448h-191.6l59-320z"></path></svg>
+                            
+                            <div class="DxFarilxDash__fins-details">
+                                <div class="DxMint__body-nav-block">
+                                    <div class="active__tab-nav DxMint__body-nav no-mb">
+                                        <div class="active__tab-item DxMint__body-nav-item active__tab-item DxMint__body-nav-item--view-lock active">
+                                            Liquidity Locker
+                                        </div>
+                                        <div class="active__tab-item DxMint__body-nav-item active__tab-item DxMint__body-nav-item--view-lock">
+                                            Token Locker
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
                                 </div>
-                                <h2 class="DxFarilxDash__find-header-title">View Single Locker</h2>
-                            </div>
-                            <div class="DxFarilxDash__lock-details">
-                                <div class="DxFarilxDash__lock-details-header">
-                                    <div class="DxFarilxDash__box-footer-link-block">
-                                        <a href="../components/view__lock.html" class="DxFarilxDash__box-footer-link">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M120 256h292"></path></svg>
-                                        </a>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-header-title">
-                                        LP Token Locker
-                                    </div>
-                                    <div class="DxFarilxDash__box-footer-link-block">
-                                        <input class="DxFarilxDash__box-footer-link-block-copy" type="text" id="copy__lick__lock" value="https://dxsale.app/app/v3/dxlplocksearch?id=0&add=0xCA4037256e869cc40F66555fd54c5d02A772F937&type=fair&chain=ETH">
-                                        <a onclick="copy__lick__lock()" class="DxFarilxDash__box-footer-link">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><circle fill="none" cx="17.5" cy="18.5" r="1.5"></circle><circle fill="none" cx="5.5" cy="11.5" r="1.5"></circle><circle fill="none" cx="17.5" cy="5.5" r="1.5"></circle><path d="M5.5 15c.91 0 1.733-.358 2.357-.93l6.26 3.577A3.483 3.483 0 0 0 14 18.5c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5s-1.57-3.5-3.5-3.5c-.91 0-1.733.358-2.357.93l-6.26-3.577c.063-.247.103-.502.108-.768l6.151-3.515c.625.572 1.448.93 2.358.93C19.43 9 21 7.43 21 5.5S19.43 2 17.5 2S14 3.57 14 5.5c0 .296.048.578.117.853L8.433 9.602A3.496 3.496 0 0 0 5.5 8C3.57 8 2 9.57 2 11.5S3.57 15 5.5 15zm12 2c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5zm0-13c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-12 6c.827 0 1.5.673 1.5 1.5S6.327 13 5.5 13S4 12.327 4 11.5S4.673 10 5.5 10z" fill="currentColor"></path></svg>
-                                        </a>
-                                        <div id="modal__copy__div" class="modal">
-                                            <div class="modal__overlay modal__overlay--tran"></div>
-                                            <div class="modal__body">
-                                                <div class="DxFarilxDash__box-footer-link-block-modal">
-                                                    <i class="far fa-check-circle"></i> Share link copied to clipboard
+                                <div class="active__tab-content">
+                                    <div class="active__tab-pane DxMint__body-pane active">
+                                        <div class="DxFarilxDash__find-body">
+                                            <div class="DxFarilxDash__find-body-btn-block DxFarilxDash__find-body-btn-block--mb">
+                                                <a href="../components/DxFariLauch__Star.html"  class="DxFarilxDash__find-body-btn h36 btn btn--blue">Lock or Manage Liquidity</a>
+                                            </div>
+                                            <div class="DxFarilxDash__find-body-input-block">
+                                                <input type="text" class="DxFarilxDash__find-body-input" placeholder="Search by token address for liquidity lock!">
+                                                <div class="DxFarilxDash__find-body-icon-block">
+                                                    <i class="DxFarilxDash__find-body-icon fal fa-search"></i>
+                                                    <div class="DxFarilxDash__find-body-icon-ttip ttip">
+                                                        Search for presales by token address!
+                                                    </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="archives__dxl-list">
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-time bsd">
+                                                        <div class="archives__dxl-item-time-title">DxLock Liquidity Locker</div>
+                                                        <div id="back__time1" class="archives__dxl-item-time-details"></div>
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-time bsd">
+                                                        <div class="archives__dxl-item-time-title">DxLock Liquidity Locker</div>
+                                                        <div id="back__time2" class="archives__dxl-item-time-details"></div>
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-time bsd">
+                                                        <div class="archives__dxl-item-time-title">DxLock Liquidity Locker</div>
+                                                        <div id="back__time3" class="archives__dxl-item-time-details"></div>
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-time bsd">
+                                                        <div class="archives__dxl-item-time-title">DxLock Liquidity Locker</div>
+                                                        <div id="back__time4" class="archives__dxl-item-time-details"></div>
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-time bsd archives__dxl-item-time--green">
+                                                        <div class="archives__dxl-item-time-title">DxLock Liquidity Locker</div>
+                                                        <div id="back__time5" class="archives__dxl-item-time-details"></div>
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-time bsd archives__dxl-item-time--green">
+                                                        <div class="archives__dxl-item-time-title">DxLock Liquidity Locker</div>
+                                                        <div id="back__time6" class="archives__dxl-item-time-details"></div>
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="active__tab-pane DxMint__body-pane">
+                                        <div class="DxFarilxDash__find-body">
+                                            <div class="DxFarilxDash__find-body-btn-block DxFarilxDash__find-body-btn-block--mb">
+                                                <a href="../components/DxFariLauch__Star.html"  class="DxFarilxDash__find-body-btn h36 btn btn--blue">Lock or Manage Tokens</a>
+                                            </div>
+                                            <div class="DxFarilxDash__find-body-input-block">
+                                                <input type="text" class="DxFarilxDash__find-body-input" placeholder="Search by token address for token lock!">
+                                                <div class="DxFarilxDash__find-body-icon-block">
+                                                    <i class="DxFarilxDash__find-body-icon fal fa-search"></i>
+                                                    <div class="DxFarilxDash__find-body-icon-ttip ttip">
+                                                        Search by token address for token lock!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="archives__dxl-list">
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"></path></g></svg>
+                                                        375:15:55:10
+                                                    </div>
+                                                    <div class="archives__dxl-item-date archives__dxl-item-date--mt">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" id="lighter" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.8 15c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V15m-1.3 0v-1.5c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V15h3M2 6h18v3.1L19 9c-.82 0-1.59.2-2.27.54C16.28 9.18 16 8.62 16 8H6c0 1.11-.89 2-2 2v4a2 2 0 0 1 2 2h7.04l-.04.5V18H2V6m9 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" fill="currentColor"></path></svg>
+                                                        5000000
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        Vesting Percent:4
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc archives__dxl-item-desc--no-bt">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"></path></g></svg>
+                                                        375:15:55:10
+                                                    </div>
+                                                    <div class="archives__dxl-item-date archives__dxl-item-date--mt">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" id="lighter" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.8 15c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V15m-1.3 0v-1.5c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V15h3M2 6h18v3.1L19 9c-.82 0-1.59.2-2.27.54C16.28 9.18 16 8.62 16 8H6c0 1.11-.89 2-2 2v4a2 2 0 0 1 2 2h7.04l-.04.5V18H2V6m9 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" fill="currentColor"></path></svg>
+                                                        5000000
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        Vesting Percent:4
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc archives__dxl-item-desc--no-bt">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"></path></g></svg>
+                                                        375:15:55:10
+                                                    </div>
+                                                    <div class="archives__dxl-item-date archives__dxl-item-date--mt">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" id="lighter" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.8 15c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V15m-1.3 0v-1.5c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V15h3M2 6h18v3.1L19 9c-.82 0-1.59.2-2.27.54C16.28 9.18 16 8.62 16 8H6c0 1.11-.89 2-2 2v4a2 2 0 0 1 2 2h7.04l-.04.5V18H2V6m9 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" fill="currentColor"></path></svg>
+                                                        5000000
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        Vesting Percent:4
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc archives__dxl-item-desc--no-bt">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"></path></g></svg>
+                                                        375:15:55:10
+                                                    </div>
+                                                    <div class="archives__dxl-item-date archives__dxl-item-date--mt">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" id="lighter" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.8 15c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V15m-1.3 0v-1.5c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V15h3M2 6h18v3.1L19 9c-.82 0-1.59.2-2.27.54C16.28 9.18 16 8.62 16 8H6c0 1.11-.89 2-2 2v4a2 2 0 0 1 2 2h7.04l-.04.5V18H2V6m9 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" fill="currentColor"></path></svg>
+                                                        5000000
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        Vesting Percent:4
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc archives__dxl-item-desc--no-bt">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"></path></g></svg>
+                                                        375:15:55:10
+                                                    </div>
+                                                    <div class="archives__dxl-item-date archives__dxl-item-date--mt">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" id="lighter" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.8 15c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V15m-1.3 0v-1.5c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V15h3M2 6h18v3.1L19 9c-.82 0-1.59.2-2.27.54C16.28 9.18 16 8.62 16 8H6c0 1.11-.89 2-2 2v4a2 2 0 0 1 2 2h7.04l-.04.5V18H2V6m9 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" fill="currentColor"></path></svg>
+                                                        5000000
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        Vesting Percent:4
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc archives__dxl-item-desc--no-bt">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="archives__dxl-item">
+                                                <a href="" class="archives__dxl-item-link bsd">
+                                                    <div class="archives__dxl-item-title">BABYJESUS/WETH</div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3 0h1v3H3V0z"></path><path fill="currentColor" d="M11 0h1v3h-1V0z"></path><path fill="currentColor" d="M6.6 14H1V6h13v.6c.4.2.7.4 1 .7V1h-2v3h-3V1H5v3H2V1H0v14h7.3c-.3-.3-.5-.6-.7-1z"></path><path fill="currentColor" d="M14 12h-3V9h1v2h2z"></path><path fill="currentColor" d="M11.5 8c1.9 0 3.5 1.6 3.5 3.5S13.4 15 11.5 15S8 13.4 8 11.5S9.6 8 11.5 8zm0-1C9 7 7 9 7 11.5S9 16 11.5 16s4.5-2 4.5-4.5S14 7 11.5 7z"></path></svg>
+                                                        29 Nov 2021 at 01:58
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"></path></g></svg>
+                                                        375:15:55:10
+                                                    </div>
+                                                    <div class="archives__dxl-item-date archives__dxl-item-date--mt">
+                                                        <svg class="archives__dxl-item-date-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icons" id="lighter" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.8 15c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V15m-1.3 0v-1.5c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V15h3M2 6h18v3.1L19 9c-.82 0-1.59.2-2.27.54C16.28 9.18 16 8.62 16 8H6c0 1.11-.89 2-2 2v4a2 2 0 0 1 2 2h7.04l-.04.5V18H2V6m9 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3z" fill="currentColor"></path></svg>
+                                                        5000000
+                                                    </div>
+                                                    <div class="archives__dxl-item-date">
+                                                        Vesting Percent:4
+                                                    </div>
+                                                    <div class="archives__dxl-item-desc archives__dxl-item-desc--no-bt">
+                                                        <div class="archives__dxl-item-desc-title">Token Address:</div>
+                                                        <div class="archives__dxl-item-desc-text">0x4225...2e99</div>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="DxFarilxDash__lock-details-body">
-                                    <div class="DxFarilxDash__lock-details-body-i4">
-                                        <img src="https://www.bing.com/images/search?view=detailV2&ccid=FPYx9wmj&id=21D80D958367E7D307179D0C50B6E867F778FFB1&thid=OIP.FPYx9wmjH1XsyBeeXwzcAwAAAA&mediaurl=https%3a%2f%2fisar.unctad.org%2fwp-content%2fuploads%2f2014%2f04%2fUN-LOGO.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.14f631f709a31f55ecc8179e5f0cdc03%3frik%3dsf9492fotlAMnQ%26pid%3dImgRaw%26r%3d0&exph=260&expw=298&q=logo&simid=607990738737311702&FORM=IRPRST&ck=BE45D0D7D82BE8C253357C5D595F1EAF&selectedIndex=18" alt="" class="DxFarilxDash__lock-details-body-i4-img">
-                                        <p class="DxFarilxDash__lock-details-body-i4-title">
-                                            <strong>TST/WETH</strong>
-                                        </p>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-acti">
-                                        <button class="DxFarilxDash__lock-details-body-acti-btn btn btn--nobgr">
-                                            TST ADDRESS
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="margin-left: 5px;"><g fill="currentColor"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"></path></g></svg>
-                                        </button>
-                                        <button class="DxFarilxDash__lock-details-body-acti-btn btn btn--nobgr">
-                                            LP Token Address
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="margin-left: 5px;"><g fill="currentColor"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"></path></g></svg>
-                                        </button>
-                                        <button class="DxFarilxDash__lock-details-body-acti-btn btn btn--nobgr">
-                                            WETH ADDRESS
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" style="margin-left: 5px;"><g fill="currentColor"><path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"></path></g></svg>
-                                        </button>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-lock bsd">
-                                        <div class="DxFarilxDash__lock-details-body-lock-title"><strong>DxLaunch Certified Liquidity Locker</strong></div>
-                                        <div class="DxFarilxDash__lock-details-body-lock-box bsd">
-                                            <img src="https://cdn.iconscout.com/icon/free/png-256/lock-1851239-1569128.png" alt="" class="DxFarilxDash__lock-details-body-lock-box-img">
-                                            <div id="back__time" class="DxFarilxDash__lock-details-body-lock-box-desc"></div>
-                                        </div>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-hr"></div>
-                                    <div class="DxFarilxDash__lock-details-body-tb-block">
-                                        <table class="DxFarilxDash__lock-details-body-tb">
-                                            <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                                <th class="DxFarilxDash__lock-details-body-tb-th">Total LP Tokens</th>
-                                                <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                            </tr>
-                                            <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                                <th class="DxFarilxDash__lock-details-body-tb-th">Locked LP Tokens</th>
-                                                <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                            </tr>
-                                            <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                                <th class="DxFarilxDash__lock-details-body-tb-th">Unlock Date</th>
-                                                <td class="DxFarilxDash__lock-details-body-tb-td">30 Sep 2021 at 11:57</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div class="DxFarilxDash__lock-details-body-end">
-                                        <div class="DxFarilxDash__lock-details-body-end-stt">
-                                            All Locks:
-                                        </div>
-                                        <div class="DxFarilxDash__lock-details-body-end-desc">
-                                            Please be aware that only the LP Tokens are locked in the contract. Circulating tokens are not locked here and any unlocked circulating tokens can be sold at any time to withdraw the underlying liquidity! Please always do strong research before investing in any products.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="DxFarilxDash__footer bsd">
-                            <div class="DxFarilxDash__footer-div">
-                                Token Information
-                            </div>
-                            <div class="DxFarilxDash__lock-details-body-tb-block no-padding-b">
-                                <table class="DxFarilxDash__lock-details-body-tb">
-                                    <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                        <th class="DxFarilxDash__lock-details-body-tb-th">Total LP Tokens</th>
-                                        <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                    </tr>
-                                    <tr class="DxFarilxDash__lock-details-body-tb-tr">
-                                        <th class="DxFarilxDash__lock-details-body-tb-th">Locked LP Tokens</th>
-                                        <td class="DxFarilxDash__lock-details-body-tb-td">31.304951684997054</td>
-                                    </tr>
-                                </table>
                             </div>
                         </div>
                     </div>
@@ -635,24 +788,28 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 <script src="../js/index.js"></script>
 <script src="../js/DxFariLauch__Dash.js"></script>
+<script src="../js/view__lock.js"></script>
 <script>
-    function checkTime(i) {
-        if (i < 10) {i = "0" + i}; 
-        return i;
-    }
-    function startTime() {
-        const today = new Date();
-        let d = today.getDate();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-        m = checkTime(m);
-        s = checkTime(s);
-        var show__time = document.getElementById('back__time');
-        var time = `${d}:${h}:${m}:${s}`;
-        show__time.innerHTML = time;
-        setTimeout(startTime, 1000);
-    }
-    startTime();
+    // function checkTime(i) {
+    //     if (i < 10) {i = "0" + i}; 
+    //     return i;
+    // }
+    // function startTime() {
+    //     const today = new Date();
+    //     let d = today.getDate();
+    //     let h = today.getHours();
+    //     let m = today.getMinutes();
+    //     let s = today.getSeconds();
+    //     m = checkTime(m);
+    //     s = checkTime(s);
+    //     var back__class = document.getElementsByClassName('archives__dxl-item-time-details');
+    //     for (let index = 1; index <= back__class.length; index++) {
+    //         var back = document.getElementById('back__time'+index);
+    //         var time = `${d}:${h}:${m}:${s}`;
+    //         back.innerHTML = time;
+    //         setTimeout(startTime, 1000);
+    //     }
+    // }
+    // startTime();
 </script>
 </html>

@@ -89,6 +89,10 @@ body {
     display: none;
 }
 
+.modal__overlay.modal__overlay--tran {
+    background-color: transparent;
+}
+
 .modal__body {
     --growth-form: 0.7;
     --growth-to: 1;
@@ -211,6 +215,7 @@ body {
 
 .ttip-block {
     position: relative;
+    cursor: pointer;
 }
 
 .ttip {
@@ -233,6 +238,7 @@ body {
 
 .ttip-block:hover .ttip {
     display: block;
+    animation: fadeIn linear 0.5s;
 }
 
 /* .ttip::after {

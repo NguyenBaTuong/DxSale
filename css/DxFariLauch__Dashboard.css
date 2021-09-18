@@ -112,6 +112,7 @@ h2.DxFarilxDash__find-header-text {
 
 .DxFarilxDash__find-body-icon-block {
     position: relative;
+    cursor: pointer;
 }
 
 .DxFarilxDash__find-body-icon-ttip {
@@ -543,8 +544,7 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 
 .DxFarilxDash__details-hr {
     height: 24px;
-    margin-bottom: 20px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .DxFarilxDash__box-left {
@@ -820,6 +820,33 @@ tr.DxFairlxDash__box-bet-tr {
     flex-basis: 20%;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.DxFarilxDash__box-footer-link-block-copy {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    opacity: 0;
+}
+
+.DxFarilxDash__box-footer-link-block-modal {
+    height: 80px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--white__color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.DxFarilxDash__box-footer-link-block-modal i {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .DxFarilxDash__lock-details-body-i4 {
@@ -1052,6 +1079,11 @@ tr.DxFairlxDash__box-bet-tr {
     .DxFarilxDash__box-bet-block {
         padding: 20px 0;
     }
+
+    
+    .DxFarilxDash__details-hr {
+        margin: 2px;
+    }
 }
 
 @media screen and (max-width: 63.938em) {
@@ -1059,6 +1091,11 @@ tr.DxFairlxDash__box-bet-tr {
         padding-right: 0;
         flex-direction: column;
         justify-content: center;
+    }
+
+    
+    .DxFarilxDash__details-hr {
+        margin: 4px;
     }
 }
 
@@ -1114,9 +1151,7 @@ tr.DxFairlxDash__box-bet-tr {
     }
 
     .DxFarilxDash__details-hr {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 30px;
+        margin: 0 4px;
     }
 
     .DxFarilxDash__modal-qr {
@@ -1143,12 +1178,12 @@ tr.DxFairlxDash__box-bet-tr {
     }
 
     .DxFarilxDash__open {
-        height: auto;
-        margin: 20px 10px 0 10px;
+        /* height: auto; */
+        /* margin: 20px 10px 0 10px; */
     }
 
     .DxFarilxDash__box {
-        padding: 20px;
+        padding: 5px;
     }
 
     .DxFarilxDash__box-bet-block {
@@ -1173,5 +1208,9 @@ tr.DxFairlxDash__box-bet-tr {
     }
     .DxFarilxDash__footer {
         width: 100%;
+    }
+
+    .DxFarilxDash__lock-block {
+        margin: 0 10px;
     }
 }

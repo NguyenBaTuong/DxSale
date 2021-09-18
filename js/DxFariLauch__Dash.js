@@ -98,7 +98,12 @@ function show__fourth() {
 
 //copy
 function copy__lick__lock() {
-    var copyText = document.getElementById("copy__lick__lock");
+    var copyText = document.getElementById('copy__lick__lock');
+    var modal__copy__div = document.getElementById('modal__copy__div');
     copyText.select();
-    document.execCommand("copy");
+    document.execCommand('copy');
+    modal__copy__div.style.display = 'flex';
+    setTimeout(function(){
+        modal__copy__div.style.display = 'none';
+    }, 1000);
 }
