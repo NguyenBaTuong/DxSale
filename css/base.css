@@ -599,7 +599,7 @@ body {
     width: 0;
     height: 0;
     border: 5px solid transparent;
-    border-color: black transparent transparent transparent;
+    border-color: #B3B3B3 transparent transparent transparent;
     position: absolute;
     top: 9px;
     right: 6px;
@@ -795,6 +795,92 @@ body {
 
 .bgr--pin:hover {
     color: #FFFFFF;
+}
+
+.item--bla {
+    background-color: #3c3c3b;
+}
+
+.item--yel {
+    background-color: #eeb90b;
+}
+
+.item--yel-o1 {
+    background-color: #facc5d;
+}
+
+.item--pin {
+    background-color: #8247e6;
+}
+
+.item--pur {
+    background-color: #c42caf;
+}
+
+.item--pin-o1 {
+    background-color: #8fb0dc;
+}
+
+.item--gre {
+    background-color: #23af91;
+}
+
+.item--gre-o {
+    background-color: #37ebeb;
+}
+
+.item--gre-o1 {
+    background-color: #9ec1a1;
+}
+
+.item--gre-o2 {
+    background-color: #43b9b5;
+}
+
+.item--gre-o3 {
+    background-color: #00d5b8;
+}
+
+.item--gre-o4 {
+    background-color: #a9e5e4;
+}
+
+.item--gre-o5 {
+    background-color: #01ffce;
+}
+
+.item--gre-o6 {
+    background-color: #62d8fa;
+}
+
+.item--o-gre {
+    background-color: #9ec1a1;
+}
+
+.item--o-blu {
+    background-color: #8fb0dc;
+}
+
+.item--blu-o {
+    background-color: #4a3fe2;
+}
+
+.item--o-blue {
+    background-color: #a9e5e4;
+}
+
+.item--o-blue:hover, 
+.item--o-blu:hover,
+.item--o-gre:hover {
+    background-color: #efefef;
+}
+
+.item--red {
+    background-color: #df6262;
+}
+
+.item--blu {
+    background-color: #1b9bc5;
 }
 
 .home-block {
@@ -1108,6 +1194,9 @@ body {
 }
 
 .home__content-header-acti-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -1139,6 +1228,11 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: var(--white__color);
+}
+
+.home__content-header-acti-detail:hover {
+    color: var(--white__color);
 }
 
 .home__content-header-acti-detail-logo {
@@ -1160,11 +1254,142 @@ body {
     text-transform: uppercase;
     font-size: 1.12rem;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home__content-header-acti-control:hover {
     background-color: #00796B;
 }
+
+.home__login-header {
+    display: flex;
+    margin: 0 20px 25px;
+    padding: 5px 0;
+}
+
+.home__login-header-item-block {
+    flex-basis: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__login-header-item {
+    text-align: center;
+}
+
+.home__login-header-item-title {
+    font-size: 1.6rem;
+}
+
+.home__login-header-item-btn {
+    font-size: 1.3rem;
+}
+
+.buy__sale:checked ~ .modal {
+    display: flex;
+}
+
+.buy__sale:checked ~ .modal .modal__overlay {
+    display: block;
+}
+
+.buy__sale:checked ~ .modal, 
+.buy__sale:checked ~ .modal .modal__overlay, 
+.buy__sale:checked ~ .modal .header__buysale {
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__buysale {
+    width: 770px;
+    border-radius: 8px;
+    background-color: var(--white__color);
+    padding: 38px;
+    position: relative;
+}
+
+.header__buysale-control {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    padding: 2px 8px;
+    display: flex;
+    border-radius: 3px;
+    color: var(--black__color);
+}
+
+.header__buysale-control {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    padding: 2px 8px;
+    display: flex;
+    border-radius: 3px;
+    color: var(--black__color);
+}
+
+.header__buysale-control i {
+    font-size: 2.4rem;
+}
+
+.header__buysale-control:hover {
+    background-color: #3467b3;
+    color: var(--white__color);
+}
+
+.header__buysale-header-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__buysale-header {
+    width: 201px;
+}
+
+.header__buysale-header-i4 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.header__buysale-header-i4-avt {
+    height: 50px;
+    width: 50px;
+}
+
+.header__buysale-header-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.header__buysale-list {
+    padding: 0 40px;
+}
+
+.header__buysale-item {
+    margin-top: 11px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    height: 45px;
+    display: block;
+}
+
+.header__buysale-item:hover {
+    opacity: 0.8;
+}
+
+.header__buysale-item.color--white {
+    color: var(--white__color);
+}
+
 
 @media screen and (min-width: 46.250em) and (max-width: 63.938em){
     .tablet {

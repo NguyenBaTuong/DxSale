@@ -756,6 +756,7 @@ tr.DxFairlxDash__box-bet-tr {
 
 .DxFarilxDash__box-right-item {
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .DxFarilxDash__box-right-item-desc {
@@ -993,6 +994,130 @@ tr.DxFairlxDash__box-bet-tr {
     font-weight: 400;
 }
 
+.DxFarilxDash__interact {
+
+}
+
+.DxFarilxDash__interact-key {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.DxFarilxDash__interact-key-title {
+    font-weight: 600;
+}
+
+.DxFarilxDash__interact-key-desc {
+    margin-top: 5px;
+}
+
+.DxFarilxDash__interact-feel {
+
+}
+
+.DxFarilxDash__interact-feel-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.DxFarilxDash__interact-feel-item {
+    border: 1px solid #e0e3e9;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.DxFarilxDash__interact-feel-item.pd {
+    padding: 5px;
+}
+
+.DxFarilxDash__interact-feel-item-img {
+    height: 24px;
+    width: 24px;
+    transition: transform linear 0.3s;
+}
+
+.DxFarilxDash__interact-feel-item:hover .DxFarilxDash__interact-feel-item-img {
+    transform: scale(1.5);
+}
+
+.DxFarilxDash__interact-tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DxFarilxDash__interact-tab-item {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.DxFarilxDash__interact-tab-item-icon {
+    margin-left: 5px;
+}
+
+.DxFarilxDash__interact-tab-item-select.custom-select-block {
+    width: 90px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    display: flex;
+}
+
+.DxFarilxDash__interact-tab-item-select.custom-select-block .select {
+    height: 100%;
+}
+
+.DxFarilxDash__interact-tab-item-select.custom-select-block .styledSelect:after {
+    top: 50%;
+    right: 6px;
+}
+
+.DxFarilxDash__interact-active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DxFarilxDash__interact-active-love {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.DxFarilxDash__interact-active-love-icon {
+    font-size: 1.4rem;
+    color: red;
+}
+
+.DxFarilxDash__interact-active-love-title {
+    color: #656c7a;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.DxFarilxDash__interact-active-love:hover .DxFarilxDash__interact-active-love-title{
+    color: var(--black__color);
+}
+
+.DxFarilxDash__interact-active-love-number {
+    padding: 0px 5px;
+    background-color: #e7e9ee;
+    border-radius: 1px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.DxFarilxDash__interact-active-control {
+    
+}
 
 
 @media screen and (max-width: 64em){
