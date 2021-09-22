@@ -507,9 +507,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="dxf__start__second" class="DxFarilxStart__details">
+                        <div style="display: block;" id="dxf__start__second" class="DxFarilxStart__details">
                             <div class="DxFarilxStart__details-active">
-                                <div class="DxFarilxDash__active flex-column bsd">
+                                <div class="DxFarilxDash__active no--mr flex-column bsd">
                                     <button class="DxFarilxDash__active-btn mb btn btn--blue">Connect Wallet to Start</button>
                                     <div class="DxFarilxDash__active-btn-block">
                                         <input type="checkbox" name="" id="dxf__start__id__qr" class="dxf__start__id__qr" hidden>
@@ -565,7 +565,267 @@
                             <div class="DxFarilxStart__details-stt-end bsd">
                                 Current Fees: 0.1  + 2% of Tokens ListedCurrent Fees: 
                             </div>
-                        </div>
+                            <form id="form__control" class="DxFarilxStart__import">
+                                <div id="DxFarilxStart__import__1__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__1" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">1</div>
+                                        Token Address
+                                    </div>
+                                    <div id="DxFarilxStart__import__1__son" class="DxFarilxStart__import-son ">
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label">Enter your token address</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="Ex. 0x">
+                                            <div class="DxFarilxStart__import-son-desc">
+                                                <div class="DxFarilxStart__import-son-desc-item">Token Name:</div>
+                                                <div class="DxFarilxStart__import-son-desc-item">Token Symbol: </div>
+                                                <div class="DxFarilxStart__import-son-desc-item">Token Decimal: </div>
+                                            </div>
+                                            <div class="DxFarilxStart__import-son-ac">
+                                                <div onclick="return btn__prev(this)" id="DxFarilxStart__import__1__back" class="DxFarilxStart__import-son-ac btn btn--no-ac">Back</div>
+                                                <div onclick="return btn__next(this)" id="DxFarilxStart__import__1__btn" class="DxFarilxStart__import-son-ac btn btn--blue">Next</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__2__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__2" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">2</div>
+                                        Presale Rate
+                                    </div>
+                                    <div id="DxFarilxStart__import__2__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label">Enter your presale price: (If I pay 1 ETH, how many tokens do I get?)</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="Ex. 500">
+                                            <div class="DxFarilxStart__import-son-ac">
+                                                <div onclick="return btn__prev(this)"  id="DxFarilxStart__import__2__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                                <div onclick="return btn__next(this)" id="DxFarilxStart__import__2__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">Next</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__3__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__3" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">3</div>
+                                        Soft/Hard Cap
+                                    </div>
+                                    <div id="DxFarilxStart__import__3__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-title">Enter presale caps: (Must be whole numbers with no decimal places) Softcap must be >= 50% of Hardcap!</div>
+                                        <div class="DxFarilxStart__import-son-group-block">
+                                            <div class="DxFarilxStart__import-son-group">
+                                                <label for="" class="DxFarilxStart__import-son-label">Soft Cap:</label>
+                                                <input type="text" class="DxFarilxStart__import-son-input" placeholder="Soft Cap ex. 20">
+                                            </div>
+                                            <div class="DxFarilxStart__import-son-group">
+                                                <label for="" class="DxFarilxStart__import-son-label">Hard Cap:</label>
+                                                <input type="text" class="DxFarilxStart__import-son-input" placeholder="Hard Cap ex. 100">
+                                            </div>                                       
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-ac">
+                                            <div onclick="return btn__prev(this)" id="DxFarilxStart__import__3__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                            <div onclick="return btn__next(this)" id="DxFarilxStart__import__3__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">Next</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__4__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__4" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">4</div>
+                                        Contribution Limits
+                                    </div>
+                                    <div id="DxFarilxStart__import__4__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-title">Enter the minimum and maximum amounts each wallet can contribute: (min,max)</div>
+                                        <div class="DxFarilxStart__import-son-group-block">
+                                            <div class="DxFarilxStart__import-son-group">
+                                                <label for="" class="DxFarilxStart__import-son-label">Minimum Contribution Limit:</label>
+                                                <input type="text" class="DxFarilxStart__import-son-input" placeholder="Minimum contribution Ex. 0.1">
+                                            </div>
+                                            <div class="DxFarilxStart__import-son-group">
+                                                <label for="" class="DxFarilxStart__import-son-label">Maximum Contribution Limit:</label>
+                                                <input type="text" class="DxFarilxStart__import-son-input" placeholder="Maximum contribution Ex. 10">
+                                            </div>                                       
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-ac">
+                                            <div onclick="return btn__prev(this)" id="DxFarilxStart__import__4__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                            <div onclick="return btn__next(this)" id="DxFarilxStart__import__4__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">Next</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__5__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__5" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">5</div>
+                                        Uniswap Liquidity
+                                    </div>
+                                    <div id="DxFarilxStart__import__5__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label">Enter the percentage of raised funds that should be allocated to Liquidity on Uniswap (Min 51%, Max 100%, We recommend > 70%)</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="Ex. 60">
+                                            <div class="DxFarilxStart__import-son-ac">
+                                                <div onclick="return btn__prev(this)"  id="DxFarilxStart__import__5__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                                <div onclick="return btn__next(this)" id="DxFarilxStart__import__5__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">Next</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__6__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__6" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">6</div>
+                                        Uniswap Listing Rate
+                                    </div>
+                                    <div id="DxFarilxStart__import__6__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label">Enter the Uniswap listing price: (If I buy 1 ETH worth on Uniswap how many tokens do I get? Usually this amount is lower than presale rate to allow for a higher listing price on Uniswap)</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="Ex. 400">
+                                            <div class="DxFarilxStart__import-son-ac">
+                                                <div onclick="return btn__prev(this)"  id="DxFarilxStart__import__6__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                                <div onclick="return btn__next(this)" id="DxFarilxStart__import__6__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">Next</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__7__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__7" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">7</div>
+                                        Contribution Limits
+                                    </div>
+                                    <div id="DxFarilxStart__import__7__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-title">Please fill out the additional information below to display it on your presale. (Information in this section is optional, but a description and logo link is recommended)</div>
+                                        <div class="DxFarilxStart__import-son-title">Note the information in this section can be updated at any time by the presale creator while the presale is active. Any links left blank will not be displayed on your sale.</div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Logo Link: (URL must end with a supported image extension png, jpg, jpeg or gif)</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="https://dxsale.network/assets/media/logoIcon_256.png">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Website Link:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="https://dxsale.network">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Github Link:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="https://github.com/OpenZeppelin/openzeppelin-contracts">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Twitter Link:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="https://twitter.com/dxsale">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Reddit Link:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="https://reddit.com/r/cryptocurrency">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Telegram Link:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="https://t.me/dxsale">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Project Description:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="DxSale is a completely decentralized and permissionless launchpad with instant Listing and liquidity locking!">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-group">
+                                            <label for="" class="DxFarilxStart__import-son-label no-mb">Any update you want to provide to participants:</label>
+                                            <input type="text" class="DxFarilxStart__import-son-input" placeholder="Join us on twitter for a special airdrop giveaway!">
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-ac">
+                                            <div onclick="return btn__prev(this)" id="DxFarilxStart__import__7__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                            <div onclick="return btn__next(this)" id="DxFarilxStart__import__7__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">Next</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import__8__banner" class="DxFarilxStart__import-item active">
+                                    <div onclick="return showximport(this)" id="DxFarilxStart__import__8" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">8</div>
+                                        Uniswap Listing Rate
+                                    </div>
+                                    <div id="DxFarilxStart__import__8__son" class="DxFarilxStart__import-son none">
+                                        <div class="DxFarilxStart__import-son-title">Please set the start and end time for the following parameters!</div>
+                                        <div class="DxFarilxStart__import-son-title">Presale Start/End Time</div>
+                                        <div class="DxFarilxStart__import-son-group-block">
+                                            <div class="DxFarilxStart__import-son-group">
+                                                <input type="datetime-local" class="DxFarilxStart__import-son-input" placeholder="Minimum contribution Ex. 0.1">
+                                            </div>
+                                            <div class="DxFarilxStart__import-son-group">
+                                                <input type="datetime-local" class="DxFarilxStart__import-son-input" placeholder="Maximum contribution Ex. 10">
+                                            </div>                                       
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-title">Liquidity Lockup Time</div>
+                                        <div class="DxFarilxStart__import-son-group-block">
+                                            <div class="DxFarilxStart__import-son-group half">
+                                                <input type="datetime-local" class="DxFarilxStart__import-son-input" placeholder="Minimum contribution Ex. 0.1">
+                                            </div>
+                                        </div>
+                                        <div class="DxFarilxStart__import-son-ac">
+                                            <div onclick="return btn__prev(this)" id="DxFarilxStart__import__8__back" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Back</div>
+                                            <div id="DxFarilxStart__import__8__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">FINISH</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="DxFarilxStart__import9__banner" class="DxFarilxStart__import-item active">
+                                    <div id="DxFarilxStart__import9" class="DxFarilxStart__import-item-title">
+                                        <div class="DxFarilxStart__import-item-title-hot">9</div>
+                                        Finalize
+                                    </div>
+                                </div>                              
+                            </form>
+                            <div id="show__table" class="DxFarilxStart__table-block">
+                                <div class="DxFarilxStart__table-title">Review your details below then press submit to create your presale on the DxSale deployer! Or press edit to go back and edit information. Warning: once submitted this information can never be changed!</div>
+                                <div class="DxFarilxStart__table-desc">
+                                    <div class="DxFarilxStart__table-desc-title">Note: You will need atleast <span class="DxFarilxStart__table-desc-title-hot">1530 tokens</span> (1000 for Presale, 480 for Uniswap Listing and 20 for platform fees and an extra 2% to avoid issues due to fees or exploits) in your wallet to start this sale.</div>
+                                    <ul class="DxFarilxStart__table-desc-list">
+                                        <li class="DxFarilxStart__table-desc-item">You can adjust your total number of tokens required by adjusting the presale rate, uniswap rate or your hardcap!</li>
+                                        <li class="DxFarilxStart__table-desc-item">Tokens that are not used will remain locked in the presale contract (consider them burned)!</li>
+                                    </ul>
+                                </div>
+                                <table class="DxFarilxStart__table">
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Token Name</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Token Symbol</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Presale Rate (Per ETH)</td>
+                                        <td class="DxFarilxStart__table-td">500</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Soft/Hard Caps (ETH)</td>
+                                        <td class="DxFarilxStart__table-td">Soft Cap: 1</td>
+                                        <td class="DxFarilxStart__table-td">Hard Cap: 2</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Contribution Limits (ETH)</td>
+                                        <td class="DxFarilxStart__table-td">Min: 0.1</td>
+                                        <td class="DxFarilxStart__table-td">Max: 10</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Presale Timings</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td">Starts: 1 OCT 2021 at 08:35</td>
+                                        <td class="DxFarilxStart__table-td">Ends: 6 OCT 2021 at 08:35</td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Uniswap Liquidity</td>
+                                        <td class="DxFarilxStart__table-td">60%</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td">Unlocks: 7 NOV 2021 at 08:35</td>
+                                    </tr>
+                                    <tr class="DxFarilxStart__table-tr">
+                                        <td class="DxFarilxStart__table-td">Uniswap Rate (Per ETH)</td>
+                                        <td class="DxFarilxStart__table-td">400</td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                        <td class="DxFarilxStart__table-td"></td>
+                                    </tr>
+                                </table>         
+                                <div class="DxFarilxStart__import-son-ac">
+                                    <div id="DxFarilxStart__edit" class="DxFarilxStart__import-son-ac-item btn btn--no-bgr">Edit</div>
+                                    <div id="DxFarilxStart__import10__btn" class="DxFarilxStart__import-son-ac-item btn btn--blue">SUBMIT</div>
+                                </div>                     
+                            </div>
                     </div>
                 </div>
                 <!-- content page  -->

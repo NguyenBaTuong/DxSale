@@ -39,3 +39,77 @@ function dxf__start__sencond () {
         dxf__start__second.style.display = 'block';
     }
 }
+
+function showximport(e) {
+    var id = e.id;
+    var son = document.getElementById(id+'__son');
+    var hot = document.getElementById(id+'__hot');
+    
+    if (son.classList.contains('none')) {
+        showximport__reset();
+        son.classList.remove('none');
+    } 
+    else {
+        son.classList.add('none');
+    }
+}
+
+function showximport__reset() {
+    var showximport__class = document.getElementsByClassName('DxFarilxStart__import-son');
+
+    for (var i = 0; i < showximport__class.length; i++) {
+        showximport__class[i].classList.add('none');
+    }
+}
+
+function to() {
+    var btn = document.getElementById('DxFarilxStart__edit');
+    var box = document.getElementById('form__control');
+    var show__table = document.getElementById('show__table');
+
+    btn.onclick = function() {
+        var st1 = document.getElementById('DxFarilxStart__import__1__son');
+        var st2 = document.getElementById('DxFarilxStart__import__8__son');
+        st1.classList.remove('none');
+        st2.classList.add('none');
+        show__table.style.display = 'none';
+        box.scrollIntoView();
+    }
+}
+to();
+
+function btn__next(e) {
+    var id = e.id;
+    var box = id.split('__');
+    var box__get = document.getElementById(box[0]+'__'+box[1]+'__'+box[2]+'__son');
+    var idnext = Number(box[2]) + 1;
+    var box__next = document.getElementById(box[0]+'__'+box[1]+'__'+idnext+'__son');
+    
+    if (!box__get.classList.contains('none')) {
+        box__get.classList.add('none');
+        box__next.classList.remove('none');
+    }
+}
+
+function btn__prev(e) {
+    var id = e.id;
+    var box = id.split('__');
+    var box__get = document.getElementById(box[0]+'__'+box[1]+'__'+box[2]+'__son');
+    var idprev = Number(box[2]) - 1;
+    var box__prev = document.getElementById(box[0]+'__'+box[1]+'__'+idprev+'__son');
+    
+    if (!box__get.classList.contains('none')) {
+        box__get.classList.add('none');
+        box__prev.classList.remove('none');
+    }
+}
+
+function show__table() {
+    var btn = document.getElementById('DxFarilxStart__import__8__btn');
+    var show__table = document.getElementById('show__table');
+
+    btn.onclick =  function () {
+        show__table.style.display = 'block';
+    }
+}
+show__table();

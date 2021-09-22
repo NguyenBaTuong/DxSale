@@ -177,6 +177,11 @@ body {
     color: var(--black__color);
 }
 
+.btn.btn--no-ac {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+}
+
 .btn--nobgr {
     background-color: transparent;
     height: 30px;
