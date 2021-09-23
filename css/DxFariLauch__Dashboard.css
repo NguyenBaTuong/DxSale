@@ -543,8 +543,38 @@ h2.DxFarilxDash__box-header-desc-name.blu-hot-h2 {
 }
 
 .DxFarilxDash__details-hr {
-    height: 24px;
+    min-height: 24px;
     margin: 0 10px;
+    padding: 20px;
+}
+
+.DxFarilxDash-details-hr-desc {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.DxFarilxDash-details-hr-ac {
+    margin: 30px 0 20px 0;
+    display: flex;
+}
+
+.DxFarilxDash-details-hr-ac-btn-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.DxFarilxDash-details-hr-ac-btn {
+    color: #2196f3;
+}
+
+.DxFarilxDash-details-hr-ac-btn:hover {
+    color: #2196f3;
+}
+
+.DxFarilxDash-details-hr-ac-btn i {
+    font-size: 2.1rem;
 }
 
 .DxFarilxDash__box-left {
@@ -1118,7 +1148,6 @@ tr.DxFairlxDash__box-bet-tr {
 .DxFarilxDash__interact-active-control {
     
 }
-
 
 @media screen and (max-width: 64em){
     /* nav slider  */
